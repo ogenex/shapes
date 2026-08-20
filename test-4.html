@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year 7 NAPLAN Maths Test - Set 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        
+        .progress-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .progress-text {
+            font-size: 14px;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .score {
+            font-size: 14px;
+            color: #666;
+            font-weight: 500;
+        }
+        
+        .question-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 30px;
+            color: #222;
+            line-height: 1.5;
+        }
+        
+        .options {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .option {
+            padding: 14px 16px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: all 0.2s;
+            background: white;
+            text-align: left;
+        }
+        
+        .option:hover:not(:disabled) {
+            border-color: #999;
+            background: #f9f9f9;
+        }
+        
+        .option:disabled {
+            cursor: default;
+        }
+        
+        .option.selected {
+            font-weight: 600;
+        }
+        
+        .option.correct {
+            background: #e8f5e9;
+            border-color: #4caf50;
+            color: #2e7d32;
+        }
+        
+        .option.incorrect {
+            background: #ffebee;
+            border-color: #f44336;
+            color: #c62828;
+        }
+        
+        .feedback {
+            padding: 14px 16px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .feedback.correct {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            color: #2e7d32;
+        }
+        
+        .feedback.incorrect {
+            background: #ffebee;
+            border-left: 4px solid #f44336;
+            color: #c62828;
+        }
+        
+        .feedback-title {
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
+        
+        .button {
+            width: 100%;
+            padding: 12px 20px;
+            font-size: 15px;
+            font-weight: 600;
+            border: 1px solid #999;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .button:hover {
+            background: #f5f5f5;
+            border-color: #333;
+        }
+        
+        .button:active {
+            transform: scale(0.98);
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .results-screen {
+            text-align: center;
+        }
+        
+        .results-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #222;
+        }
+        
+        .results-subtitle {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .score-display {
+            font-size: 56px;
+            font-weight: 700;
+            margin: 20px 0;
+            color: #2196f3;
+        }
+        
+        .score-detail {
+            font-size: 16px;
+            margin-bottom: 30px;
+            color: #222;
+        }
+        
+        .score-detail strong {
+            font-weight: 700;
+        }
+        
+        .feedback-message {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="testScreen">
+            <div class="progress-bar">
+                <span class="progress-text">Question <span id="currentQ">1</span>/<span id="totalQ">30</span></span>
+                <span class="score">Score: <span id="scoreDisplay">0</span></span>
+            </div>
+            
+            <h2 class="question-title" id="questionText"></h2>
+            
+            <div class="options" id="optionsContainer"></div>
+            
+            <div id="feedbackContainer" class="hidden"></div>
+            
+            <button class="button" id="nextButton" class="hidden" onclick="nextQuestion()">Next question</button>
+        </div>
+        
+        <div id="resultsScreen" class="results-screen hidden">
+            <h2 class="results-title">Test complete</h2>
+            <p class="results-subtitle">Here's how you did</p>
+            
+            <div class="score-display" id="percentageDisplay">75%</div>
+            
+            <div class="score-detail">
+                You got <strong><span id="correctCount">6</span> out of <span id="totalCount">30</span></strong> correct
+            </div>
+            
+            <div class="feedback-message" id="feedbackMessage"></div>
+            
+            <button class="button" onclick="restartTest()">Try again</button>
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            {
+                question: "A box is 4 cm long, 3 cm wide, and 5 cm high. What is its volume?",
+                options: ["12 cm³", "30 cm³", "60 cm³", "120 cm³"],
+                correct: 2,
+                explanation: "Volume = length × width × height = 4 × 3 × 5 = 60 cm³"
+            },
+            {
+                question: "Convert 2.5 km to metres.",
+                options: ["25 m", "250 m", "2,500 m", "25,000 m"],
+                correct: 2,
+                explanation: "1 km = 1,000 m, so 2.5 km = 2.5 × 1,000 = 2,500 m"
+            },
+            {
+                question: "What is 3/5 + 1/4? (Express as a fraction)",
+                options: ["4/9", "17/20", "1/2", "2/3"],
+                correct: 1,
+                explanation: "Common denominator is 20: 12/20 + 5/20 = 17/20"
+            },
+            {
+                question: "If a price increases from $40 to $50, what is the percentage increase?",
+                options: ["10%", "20%", "25%", "50%"],
+                correct: 2,
+                explanation: "Increase = $10. Percentage = ($10/$40) × 100 = 25%"
+            },
+            {
+                question: "What is 5³?",
+                options: ["15", "25", "125", "625"],
+                correct: 2,
+                explanation: "5³ = 5 × 5 × 5 = 125"
+            },
+            {
+                question: "The range of these numbers is: 3, 7, 2, 9, 5",
+                options: ["2", "5", "7", "9"],
+                correct: 2,
+                explanation: "Range = highest - lowest = 9 - 2 = 7"
+            },
+            {
+                question: "A rectangle has perimeter 24 cm and length 8 cm. What's the width?",
+                options: ["3 cm", "4 cm", "6 cm", "16 cm"],
+                correct: 2,
+                explanation: "Perimeter = 2(length + width). 24 = 2(8 + w), so 12 = 8 + w, w = 4 cm. Wait, let me recalculate: 2(8 + w) = 24, 8 + w = 12, w = 4. But 4 is option 1. Let me verify: 2(8 + 4) = 2(12) = 24. Yes, width is 4 cm. So correct answer is option 1, not 2. Let me fix this.",
+                correct: 1,
+                explanation: "Perimeter = 2(length + width). 24 = 2(8 + w), so 12 = 8 + w, therefore w = 4 cm"
+            },
+            {
+                question: "What is 7 × 8 - 3 × 5?",
+                options: ["11", "28", "41", "56"],
+                correct: 2,
+                explanation: "7 × 8 = 56, 3 × 5 = 15, so 56 - 15 = 41"
+            },
+            {
+                question: "How many sides does a heptagon have?",
+                options: ["5", "6", "7", "8"],
+                correct: 2,
+                explanation: "A heptagon is a 7-sided polygon (hept = 7)"
+            },
+            {
+                question: "What is 1 2/3 as an improper fraction?",
+                options: ["2/3", "3/5", "5/3", "8/3"],
+                correct: 2,
+                explanation: "1 2/3 = (1 × 3 + 2)/3 = (3 + 2)/3 = 5/3"
+            },
+            {
+                question: "Two parallel lines are cut by a transversal. If one angle is 120°, what's the alternate angle?",
+                options: ["60°", "120°", "240°", "30°"],
+                correct: 1,
+                explanation: "Alternate angles are equal when formed by parallel lines and a transversal. So it's also 120°"
+            },
+            {
+                question: "What is the area of a parallelogram with base 10 cm and height 7 cm?",
+                options: ["17 cm²", "34 cm²", "70 cm²", "100 cm²"],
+                correct: 2,
+                explanation: "Area of parallelogram = base × height = 10 × 7 = 70 cm²"
+            },
+            {
+                question: "A bag contains balls with numbers 1 to 10. What's the probability of drawing an even number?",
+                options: ["1/10", "1/5", "1/2", "9/10"],
+                correct: 2,
+                explanation: "Even numbers from 1 to 10: 2, 4, 6, 8, 10 (that's 5). P(even) = 5/10 = 1/2"
+            },
+            {
+                question: "Estimate: 9.8 × 5.1",
+                options: ["30", "40", "50", "60"],
+                correct: 2,
+                explanation: "Round: 10 × 5 = 50 (approximately)"
+            },
+            {
+                question: "What is 2⁴?",
+                options: ["8", "16", "32", "64"],
+                correct: 1,
+                explanation: "2⁴ = 2 × 2 × 2 × 2 = 16"
+            },
+            {
+                question: "A triangle has angles 45°, 75°, and x°. What's x?",
+                options: ["60°", "70°", "80°", "120°"],
+                correct: 1,
+                explanation: "Angles in a triangle sum to 180°: 45 + 75 + x = 180, so x = 60°. Wait, 45 + 75 = 120, so 180 - 120 = 60. That's option 0. Let me recheck the options - 60° is correct. So it's option 0.",
+                correct: 0,
+                explanation: "Angles in a triangle sum to 180°: 45 + 75 + x = 180, so x = 180 - 120 = 60°"
+            },
+            {
+                question: "Convert 3 hours 45 minutes to minutes.",
+                options: ["75 minutes", "180 minutes", "225 minutes", "345 minutes"],
+                correct: 2,
+                explanation: "3 hours = 180 minutes. 180 + 45 = 225 minutes"
+            },
+            {
+                question: "What is 6 × 10²?",
+                options: ["60", "600", "1,200", "6,000"],
+                correct: 1,
+                explanation: "10² = 100, so 6 × 100 = 600"
+            },
+            {
+                question: "If y = 2x - 3, what is y when x = 4?",
+                options: ["5", "8", "11", "13"],
+                correct: 0,
+                explanation: "y = 2(4) - 3 = 8 - 3 = 5"
+            },
+            {
+                question: "The perimeter of a regular hexagon with side 3 cm is?",
+                options: ["6 cm", "9 cm", "15 cm", "18 cm"],
+                correct: 3,
+                explanation: "Regular hexagon has 6 equal sides. Perimeter = 6 × 3 = 18 cm"
+            },
+            {
+                question: "What is the area of a trapezoid with parallel sides 5 cm and 7 cm, and height 4 cm?",
+                options: ["12 cm²", "24 cm²", "28 cm²", "48 cm²"],
+                correct: 1,
+                explanation: "Area = ((a + b)/2) × h = ((5 + 7)/2) × 4 = 6 × 4 = 24 cm²"
+            },
+            {
+                question: "What is 0.25 ÷ 0.5?",
+                options: ["0.05", "0.125", "0.5", "1.25"],
+                correct: 2,
+                explanation: "0.25 ÷ 0.5 = 25/100 ÷ 50/100 = 25/50 = 1/2 = 0.5"
+            },
+            {
+                question: "If a right angle is divided into two angles of 35° and x°, what is x?",
+                options: ["35°", "45°", "55°", "90°"],
+                correct: 2,
+                explanation: "A right angle = 90°. 90 - 35 = 55°"
+            },
+            {
+                question: "What is 25% of 48?",
+                options: ["12", "24", "36", "48"],
+                correct: 0,
+                explanation: "25% = 1/4. 48 ÷ 4 = 12"
+            },
+            {
+                question: "A shop has 60 apples. 15 are spoiled. What percentage are good?",
+                options: ["25%", "50%", "75%", "90%"],
+                correct: 2,
+                explanation: "Good apples = 60 - 15 = 45. Percentage = (45/60) × 100 = 75%"
+            },
+            {
+                question: "What is -8 × -3?",
+                options: ["-24", "-11", "11", "24"],
+                correct: 3,
+                explanation: "Negative × negative = positive. -8 × -3 = 24"
+            },
+            {
+                question: "How many faces does a cube have?",
+                options: ["4", "6", "8", "12"],
+                correct: 1,
+                explanation: "A cube has 6 square faces"
+            },
+            {
+                question: "What is 30% of 90?",
+                options: ["27", "30", "36", "60"],
+                correct: 0,
+                explanation: "30% of 90 = 0.30 × 90 = 27"
+            },
+            {
+                question: "If a line has gradient 2, and passes through (0, 3), what is y when x = 5?",
+                options: ["8", "10", "13", "15"],
+                correct: 2,
+                explanation: "y = mx + c. y = 2x + 3. When x = 5: y = 2(5) + 3 = 10 + 3 = 13"
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        let selectedAnswer = null;
+        let answered = false;
+
+        function loadQuestion() {
+            const question = questions[currentQuestion];
+            document.getElementById('questionText').textContent = question.question;
+            document.getElementById('currentQ').textContent = currentQuestion + 1;
+            document.getElementById('totalQ').textContent = questions.length;
+            
+            const optionsContainer = document.getElementById('optionsContainer');
+            optionsContainer.innerHTML = '';
+            
+            question.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.className = 'option';
+                button.textContent = String.fromCharCode(65 + index) + '. ' + option;
+                button.onclick = () => selectAnswer(index);
+                optionsContainer.appendChild(button);
+            });
+            
+            document.getElementById('feedbackContainer').classList.add('hidden');
+            document.getElementById('nextButton').classList.add('hidden');
+            selectedAnswer = null;
+            answered = false;
+        }
+
+        function selectAnswer(index) {
+            if (answered) return;
+            
+            const question = questions[currentQuestion];
+            selectedAnswer = index;
+            answered = true;
+            
+            const options = document.querySelectorAll('.option');
+            options.forEach(btn => btn.disabled = true);
+            
+            const isCorrect = index === question.correct;
+            if (isCorrect) {
+                score++;
+            }
+            
+            options[index].classList.add(isCorrect ? 'correct' : 'incorrect');
+            options[index].classList.add('selected');
+            
+            document.getElementById('scoreDisplay').textContent = score;
+            
+            const feedbackContainer = document.getElementById('feedbackContainer');
+            feedbackContainer.innerHTML = `
+                <div class="feedback ${isCorrect ? 'correct' : 'incorrect'}">
+                    <div class="feedback-title">${isCorrect ? '✓ Correct!' : '✗ Not quite'}</div>
+                    <div>${question.explanation}</div>
+                </div>
+            `;
+            feedbackContainer.classList.remove('hidden');
+            
+            document.getElementById('nextButton').classList.remove('hidden');
+        }
+
+        function nextQuestion() {
+            if (currentQuestion < questions.length - 1) {
+                currentQuestion++;
+                loadQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function showResults() {
+            document.getElementById('testScreen').classList.add('hidden');
+            document.getElementById('resultsScreen').classList.remove('hidden');
+            
+            const percentage = Math.round((score / questions.length) * 100);
+            document.getElementById('percentageDisplay').textContent = percentage + '%';
+            document.getElementById('correctCount').textContent = score;
+            document.getElementById('totalCount').textContent = questions.length;
+            
+            let message = '';
+            if (percentage >= 80) {
+                message = 'Excellent work! You\'ve demonstrated strong understanding of Year 7 maths concepts.';
+            } else if (percentage >= 70) {
+                message = 'Great effort! You\'re getting most concepts down. Review the questions you missed.';
+            } else if (percentage >= 60) {
+                message = 'Good attempt! Focus on the areas where you found the questions challenging.';
+            } else {
+                message = 'Keep practicing! Year 7 maths builds on these foundations. Try again soon.';
+            }
+            document.getElementById('feedbackMessage').textContent = message;
+        }
+
+        function restartTest() {
+            currentQuestion = 0;
+            score = 0;
+            selectedAnswer = null;
+            answered = false;
+            
+            document.getElementById('testScreen').classList.remove('hidden');
+            document.getElementById('resultsScreen').classList.add('hidden');
+            
+            loadQuestion();
+        }
+
+        // Start the test
+        loadQuestion();
+    </script>
+</body>
+</html>
