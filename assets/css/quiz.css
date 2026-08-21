@@ -163,6 +163,7 @@
 }
 
 .button {
+    display: block;
     width: 100%;
     padding: 12px 20px;
     font-size: 15px;
@@ -171,6 +172,9 @@
     border-radius: 8px;
     background: white;
     cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
     transition: all 0.2s;
 }
 
