@@ -9,7 +9,7 @@
     "id": "ratios-rates",
     "title": "Ratios & Rates",
     "description": "Compare quantities, scale recipes and maps, and work with speed and unit rates.",
-    "questionCount": 6
+    "questionCount": 24
   },
   {
     "id": "algebra-patterns",
@@ -33,12 +33,12 @@
     "id": "statistics-probability",
     "title": "Statistics & Probability",
     "description": "Mean, median, mode, range, charts, and probability.",
-    "questionCount": 14
+    "questionCount": 24
   },
   {
     "id": "money-financial",
     "title": "Money & Financial Maths",
     "description": "Discounts, interest, and everyday money calculations.",
-    "questionCount": 6
+    "questionCount": 24
   }
 ]

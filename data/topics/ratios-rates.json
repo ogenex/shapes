@@ -68,6 +68,114 @@
       ],
       "correct": 2,
       "explanation": "Ratio 2:3 means for every 2 red, there are 3 blue. If 2 = 10, then 1 = 5, so 3 = 15 blue"
+    },
+    {
+      "question": "Simplify the ratio 12:18 to its simplest form.",
+      "options": ["2:3", "3:4", "4:6", "6:9"],
+      "correct": 0,
+      "explanation": "Divide both sides by their greatest common divisor, 6: 12÷6 : 18÷6 = 2:3"
+    },
+    {
+      "question": "$60 is divided between Alex and Ben in the ratio 2:3. How much does Ben get?",
+      "options": ["$24", "$30", "$36", "$40"],
+      "correct": 2,
+      "explanation": "Total parts = 2 + 3 = 5. 1 part = $60 ÷ 5 = $12. Ben's 3 parts = 3 × $12 = $36"
+    },
+    {
+      "question": "Which ratio is equivalent to 4:5?",
+      "options": ["8:9", "8:10", "12:20", "16:18"],
+      "correct": 1,
+      "explanation": "Multiply both sides of 4:5 by 2 to get 8:10"
+    },
+    {
+      "question": "A 5 kg bag of rice costs $15. What is the price per kilogram?",
+      "options": ["$1", "$2", "$3", "$5"],
+      "correct": 2,
+      "explanation": "Price per kg = $15 ÷ 5 = $3"
+    },
+    {
+      "question": "A cyclist rides at 20 km/h. How long does it take to travel 60 km?",
+      "options": ["2 hours", "3 hours", "4 hours", "5 hours"],
+      "correct": 1,
+      "explanation": "Time = Distance ÷ Speed = 60 ÷ 20 = 3 hours"
+    },
+    {
+      "question": "A train travels at 80 km/h for 2.5 hours. How far does it travel?",
+      "options": ["160 km", "180 km", "200 km", "220 km"],
+      "correct": 2,
+      "explanation": "Distance = Speed × Time = 80 × 2.5 = 200 km"
+    },
+    {
+      "question": "A recipe for 12 muffins needs 3 eggs. How many eggs are needed for 4 muffins?",
+      "options": ["1", "2", "3", "4"],
+      "correct": 0,
+      "explanation": "4 muffins is 1/3 of 12 muffins, so eggs needed = 3 ÷ 3 = 1"
+    },
+    {
+      "question": "A map has a scale of 1 cm : 5 km. Two towns are 8 cm apart on the map. What is the actual distance?",
+      "options": ["13 km", "20 km", "40 km", "45 km"],
+      "correct": 2,
+      "explanation": "8 cm × 5 km per cm = 40 km"
+    },
+    {
+      "question": "Which is the better buy: a 400 g box of cereal for $4, or a 600 g box for $5.40?",
+      "options": ["400 g box ($1.00/100g)", "600 g box ($0.90/100g)", "They cost the same per 100 g", "Cannot be determined"],
+      "correct": 1,
+      "explanation": "400 g box: $4 ÷ 4 = $1.00 per 100 g. 600 g box: $5.40 ÷ 6 = $0.90 per 100 g. The 600 g box is cheaper per 100 g"
+    },
+    {
+      "question": "A shade of green paint is mixed using blue and yellow in the ratio 3:5. How many litres of yellow are needed to make 24 litres of the mixture?",
+      "options": ["9 L", "12 L", "15 L", "18 L"],
+      "correct": 2,
+      "explanation": "Total parts = 3 + 5 = 8. 1 part = 24 ÷ 8 = 3 L. Yellow's 5 parts = 5 × 3 = 15 L"
+    },
+    {
+      "question": "Mia runs 400 m in 2 minutes. At the same pace, how long will she take to run 1000 m?",
+      "options": ["4 minutes", "5 minutes", "6 minutes", "8 minutes"],
+      "correct": 1,
+      "explanation": "Her pace is 400 ÷ 2 = 200 m per minute. Time for 1000 m = 1000 ÷ 200 = 5 minutes"
+    },
+    {
+      "question": "In a class, the ratio of boys to girls is 4:5. What fraction of the class are boys?",
+      "options": ["4/5", "4/9", "5/9", "5/4"],
+      "correct": 1,
+      "explanation": "Total parts = 4 + 5 = 9, so boys make up 4/9 of the class"
+    },
+    {
+      "question": "A fruit punch is made from juice and lemonade in the ratio 5:1. If 2 L of lemonade is used, how much juice is needed?",
+      "options": ["5 L", "8 L", "10 L", "12 L"],
+      "correct": 2,
+      "explanation": "Each 'part' of lemonade is 2 L, so juice (5 parts) = 5 × 2 = 10 L"
+    },
+    {
+      "question": "A snail moves 3 metres in 1 hour. At this rate, how far does it travel in 4 hours?",
+      "options": ["7 m", "9 m", "12 m", "15 m"],
+      "correct": 2,
+      "explanation": "Distance = Speed × Time = 3 × 4 = 12 m"
+    },
+    {
+      "question": "A 2 L bottle of juice costs $6. A 3 L bottle costs $8.40. Which is the cheaper price per litre?",
+      "options": ["2 L bottle ($3.00/L)", "3 L bottle ($2.80/L)", "Both are the same", "Cannot be determined"],
+      "correct": 1,
+      "explanation": "2 L bottle: $6 ÷ 2 = $3.00/L. 3 L bottle: $8.40 ÷ 3 = $2.80/L. The 3 L bottle is cheaper per litre"
+    },
+    {
+      "question": "A photo measuring 4 cm by 6 cm is enlarged in the ratio 1:3. What are the new dimensions?",
+      "options": ["8 cm by 10 cm", "12 cm by 18 cm", "4 cm by 18 cm", "12 cm by 6 cm"],
+      "correct": 1,
+      "explanation": "Multiply each dimension by 3: 4 × 3 = 12 cm and 6 × 3 = 18 cm"
+    },
+    {
+      "question": "A car travels 240 km at an average speed of 60 km/h. How long does the journey take?",
+      "options": ["3 hours", "4 hours", "5 hours", "6 hours"],
+      "correct": 1,
+      "explanation": "Time = Distance ÷ Speed = 240 ÷ 60 = 4 hours"
+    },
+    {
+      "question": "A recipe uses flour and sugar in the ratio 8:2. Expressed in simplest form, this ratio is:",
+      "options": ["8:2", "4:1", "2:1", "1:4"],
+      "correct": 1,
+      "explanation": "Divide both sides by 2: 8÷2 : 2÷2 = 4:1"
     }
   ]
 }

@@ -163,6 +163,68 @@
       "correct": 2,
       "explanation": "Stem 3 with leaf 4 gives the score 34, which is the highest value shown (stem × 10 + leaf)",
       "visual": "<svg viewBox=\"0 0 220 140\" width=\"260\">\n                    <line x1=\"60\" y1=\"10\" x2=\"60\" y2=\"120\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                    <text x=\"40\" y=\"30\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Stem</text>\n                    <text x=\"130\" y=\"30\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Leaf</text>\n                    <text x=\"40\" y=\"55\" font-size=\"13\" text-anchor=\"middle\">1</text>\n                    <text x=\"80\" y=\"55\" font-size=\"13\">2  5  8</text>\n                    <text x=\"40\" y=\"80\" font-size=\"13\" text-anchor=\"middle\">2</text>\n                    <text x=\"80\" y=\"80\" font-size=\"13\">1  3  6  9</text>\n                    <text x=\"40\" y=\"105\" font-size=\"13\" text-anchor=\"middle\">3</text>\n                    <text x=\"80\" y=\"105\" font-size=\"13\">0  4</text>\n                </svg>"
+    },
+    {
+      "question": "A die is rolled once. What is the probability of NOT rolling a 6?",
+      "options": ["1/6", "1/3", "1/2", "5/6"],
+      "correct": 3,
+      "explanation": "P(not 6) = 1 - P(6) = 1 - 1/6 = 5/6"
+    },
+    {
+      "question": "Two coins are flipped. What is the probability that both land on heads?",
+      "options": ["1/2", "1/3", "1/4", "1/8"],
+      "correct": 2,
+      "explanation": "There are 4 equally likely outcomes (HH, HT, TH, TT), and only 1 is both heads, so P(both heads) = 1/4"
+    },
+    {
+      "question": "What is the mean of: 4, 8, 6, 10, 12?",
+      "options": ["6", "8", "9", "10"],
+      "correct": 1,
+      "explanation": "Mean = (4 + 8 + 6 + 10 + 12) ÷ 5 = 40 ÷ 5 = 8"
+    },
+    {
+      "question": "What is the mode of: 5, 9, 5, 2, 9, 5, 7?",
+      "options": ["2", "5", "7", "9"],
+      "correct": 1,
+      "explanation": "5 appears three times, more often than any other value, so the mode is 5"
+    },
+    {
+      "question": "What is the median of: 3, 7, 8, 12, 14, 20?",
+      "options": ["8", "10", "12", "14"],
+      "correct": 1,
+      "explanation": "With 6 values, the median is the average of the 3rd and 4th values: (8 + 12) ÷ 2 = 10"
+    },
+    {
+      "question": "What is the range of: 15, 22, 9, 31, 18?",
+      "options": ["13", "18", "22", "31"],
+      "correct": 2,
+      "explanation": "Range = highest - lowest = 31 - 9 = 22"
+    },
+    {
+      "question": "Team A scored 10, 14, 18 in three games. Team B scored 12, 12, 16 in three games. Which team has the higher mean score?",
+      "options": ["Team A", "Team B", "They are equal", "Cannot be determined"],
+      "correct": 0,
+      "explanation": "Team A's mean = (10+14+18) ÷ 3 = 14. Team B's mean = (12+12+16) ÷ 3 ≈ 13.3. Team A is higher"
+    },
+    {
+      "question": "A bag contains only red marbles. What is the probability of picking a blue marble?",
+      "options": ["Certain", "Likely", "Unlikely", "Impossible"],
+      "correct": 3,
+      "explanation": "Since there are no blue marbles in the bag, picking one is impossible"
+    },
+    {
+      "question": "This frequency table shows how many pets students in a class have. How many students have exactly 2 pets?",
+      "options": ["1", "5", "6", "8"],
+      "correct": 2,
+      "explanation": "Reading the table, the frequency for 2 pets is 6",
+      "visual": "<svg viewBox=\"0 0 260 140\" width=\"300\"><rect x=\"20\" y=\"10\" width=\"220\" height=\"30\" fill=\"#e3f2fd\" stroke=\"#333\"/><rect x=\"20\" y=\"40\" width=\"220\" height=\"30\" fill=\"white\" stroke=\"#333\"/><line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"70\" stroke=\"#333\"/><text x=\"75\" y=\"30\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Pets</text><text x=\"185\" y=\"30\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Students</text><text x=\"75\" y=\"60\" font-size=\"12\" text-anchor=\"middle\">0, 1, 2, 3</text><text x=\"185\" y=\"60\" font-size=\"12\" text-anchor=\"middle\">5, 8, 6, 1</text></svg>"
+    },
+    {
+      "question": "This bar graph shows how many books each of 4 students read in a month. What is the total number of books read by all 4 students?",
+      "options": ["10", "12", "14", "16"],
+      "correct": 2,
+      "explanation": "Adding the bars: 3 + 5 + 2 + 4 = 14",
+      "visual": "<svg viewBox=\"0 0 280 180\" width=\"320\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"150\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"150\" x2=\"260\" y2=\"150\" stroke=\"#333\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"105\" width=\"30\" height=\"45\" fill=\"#42a5f5\"/><rect x=\"105\" y=\"75\" width=\"30\" height=\"75\" fill=\"#66bb6a\"/><rect x=\"160\" y=\"120\" width=\"30\" height=\"30\" fill=\"#ffa726\"/><rect x=\"215\" y=\"90\" width=\"30\" height=\"60\" fill=\"#ab47bc\"/><text x=\"65\" y=\"165\" font-size=\"11\" text-anchor=\"middle\">A</text><text x=\"120\" y=\"165\" font-size=\"11\" text-anchor=\"middle\">B</text><text x=\"175\" y=\"165\" font-size=\"11\" text-anchor=\"middle\">C</text><text x=\"230\" y=\"165\" font-size=\"11\" text-anchor=\"middle\">D</text><text x=\"65\" y=\"97\" font-size=\"11\" text-anchor=\"middle\">3</text><text x=\"120\" y=\"67\" font-size=\"11\" text-anchor=\"middle\">5</text><text x=\"175\" y=\"112\" font-size=\"11\" text-anchor=\"middle\">2</text><text x=\"230\" y=\"82\" font-size=\"11\" text-anchor=\"middle\">4</text></svg>"
     }
   ]
 }

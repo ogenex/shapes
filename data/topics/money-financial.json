@@ -68,6 +68,114 @@
       ],
       "correct": 1,
       "explanation": "Interest = $500 × 0.10 = $50. Total = $500 + $50 = $550"
+    },
+    {
+      "question": "A pair of shoes costs $60. They are discounted by 25%. What is the sale price?",
+      "options": ["$15", "$40", "$45", "$48"],
+      "correct": 2,
+      "explanation": "25% of $60 = $15. $60 - $15 = $45"
+    },
+    {
+      "question": "A tool costs $50 before GST. If GST is 10%, what is the total price including GST?",
+      "options": ["$45", "$50", "$55", "$60"],
+      "correct": 2,
+      "explanation": "GST = 10% of $50 = $5. Total = $50 + $5 = $55"
+    },
+    {
+      "question": "A trader buys a bike for $120 and sells it for $150. What is the profit?",
+      "options": ["$20", "$30", "$40", "$270"],
+      "correct": 1,
+      "explanation": "Profit = Selling price - Cost price = $150 - $120 = $30"
+    },
+    {
+      "question": "A shopkeeper buys a lamp for $40 and sells it for $32. What is the loss as a percentage of the cost price?",
+      "options": ["8%", "10%", "20%", "32%"],
+      "correct": 2,
+      "explanation": "Loss = $40 - $32 = $8. As a percentage of cost price: $8 ÷ $40 = 20%"
+    },
+    {
+      "question": "A 6-pack of drinks costs $9. What is the price per drink?",
+      "options": ["$1.00", "$1.20", "$1.50", "$2.00"],
+      "correct": 2,
+      "explanation": "Price per drink = $9 ÷ 6 = $1.50"
+    },
+    {
+      "question": "You buy a book for $12.35 and pay with a $20 note. How much change do you receive?",
+      "options": ["$6.65", "$7.65", "$7.75", "$8.65"],
+      "correct": 1,
+      "explanation": "Change = $20 - $12.35 = $7.65"
+    },
+    {
+      "question": "A dinner bill of $84 is split evenly between 4 friends. How much does each pay?",
+      "options": ["$18", "$20", "$21", "$28"],
+      "correct": 2,
+      "explanation": "Each friend pays $84 ÷ 4 = $21"
+    },
+    {
+      "question": "Jack saves $15 each week. How many weeks will it take him to save $180?",
+      "options": ["10", "12", "14", "16"],
+      "correct": 1,
+      "explanation": "Weeks needed = $180 ÷ $15 = 12"
+    },
+    {
+      "question": "Find the simple interest on $800 at 4% per year for 3 years.",
+      "options": ["$32", "$96", "$100", "$120"],
+      "correct": 1,
+      "explanation": "Simple interest = Principal × Rate × Time = $800 × 0.04 × 3 = $96"
+    },
+    {
+      "question": "$300 is invested at 6% simple interest per year. What is the total amount after 2 years?",
+      "options": ["$318", "$336", "$348", "$360"],
+      "correct": 1,
+      "explanation": "Interest = $300 × 0.06 × 2 = $36. Total = $300 + $36 = $336"
+    },
+    {
+      "question": "Maya earns $18 per hour. How much does she earn for a 6-hour shift?",
+      "options": ["$96", "$108", "$118", "$126"],
+      "correct": 1,
+      "explanation": "Earnings = $18 × 6 = $108"
+    },
+    {
+      "question": "Sam is paid $22.50 per hour and works 4 hours. How much does he earn?",
+      "options": ["$80", "$85", "$90", "$95"],
+      "correct": 2,
+      "explanation": "Earnings = $22.50 × 4 = $90"
+    },
+    {
+      "question": "A laptop costs $650. You pay a deposit of $150 and the rest in 5 equal monthly payments. How much is each payment?",
+      "options": ["$90", "$100", "$110", "$120"],
+      "correct": 1,
+      "explanation": "Remaining balance = $650 - $150 = $500. Each payment = $500 ÷ 5 = $100"
+    },
+    {
+      "question": "A $200 jacket is first discounted by 10%, then a further 10% off the new price. What is the final price?",
+      "options": ["$160", "$162", "$170", "$180"],
+      "correct": 1,
+      "explanation": "First discount: $200 × 0.9 = $180. Second discount: $180 × 0.9 = $162"
+    },
+    {
+      "question": "After a 20% discount, a jumper costs $48. What was the original price?",
+      "options": ["$52.80", "$57.60", "$60", "$68"],
+      "correct": 2,
+      "explanation": "The sale price is 80% of the original: original = $48 ÷ 0.8 = $60"
+    },
+    {
+      "question": "A 1 L bottle of milk costs $2.20. A 2 L bottle costs $4.00. Which is the better value per litre?",
+      "options": ["1 L bottle ($2.20/L)", "2 L bottle ($2.00/L)", "Both the same", "Cannot be determined"],
+      "correct": 1,
+      "explanation": "2 L bottle: $4.00 ÷ 2 = $2.00/L, which is cheaper than the 1 L bottle's $2.20/L"
+    },
+    {
+      "question": "A phone plan increases from $40 to $46 per month. What is the percentage increase?",
+      "options": ["6%", "10%", "12%", "15%"],
+      "correct": 3,
+      "explanation": "Increase = $46 - $40 = $6. Percentage increase = $6 ÷ $40 = 15%"
+    },
+    {
+      "question": "A jacket costs $88 including 10% GST. What was the price before GST?",
+      "options": ["$78", "$79.20", "$80", "$81.40"],
+      "correct": 2,
+      "explanation": "The GST-inclusive price is 110% of the original: original = $88 ÷ 1.10 = $80"
     }
   ]
 }
