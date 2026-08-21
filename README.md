@@ -1,7 +1,5 @@
-# Year 7 NAPLAN Maths Practice
-
-A free, self-contained practice site for Year 7 students preparing for the
-NAPLAN numeracy test. It's aimed at students studying independently, and at
+# Maths Practice
+Self-contained NAPLAN style questions aimed at students studying independently, and at
 parents or tutors who want a quick source of practice questions without
 signing up for anything.
 
