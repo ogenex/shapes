@@ -1,0 +1,73 @@
+{
+  "id": "ratios-rates",
+  "title": "Ratios & Rates",
+  "description": "Compare quantities, scale recipes and maps, and work with speed and unit rates.",
+  "questions": [
+    {
+      "question": "The ratio of boys to girls is 3:2. If there are 15 boys, how many girls?",
+      "options": [
+        "10",
+        "22.5",
+        "9",
+        "20"
+      ],
+      "correct": 0,
+      "explanation": "If 3 parts = 15, then 1 part = 5. So 2 parts = 2 × 5 = 10 girls"
+    },
+    {
+      "question": "A car travels 150 km in 3 hours. What's its average speed?",
+      "options": [
+        "45 km/h",
+        "50 km/h",
+        "150 km/h",
+        "450 km/h"
+      ],
+      "correct": 1,
+      "explanation": "Speed = Distance ÷ Time = 150 ÷ 3 = 50 km/h"
+    },
+    {
+      "question": "If a recipe makes 4 servings and uses 2 cups of flour, how much flour for 8 servings?",
+      "options": [
+        "1 cup",
+        "2 cups",
+        "4 cups",
+        "6 cups"
+      ],
+      "correct": 2,
+      "explanation": "Double the recipe, double the ingredients: 2 × 2 = 4 cups"
+    },
+    {
+      "question": "A map has a scale of 1 cm : 10 km. If two towns are 5 cm apart on the map, how far are they in reality?",
+      "options": [
+        "2 km",
+        "15 km",
+        "50 km",
+        "100 km"
+      ],
+      "correct": 2,
+      "explanation": "5 cm × 10 km per cm = 50 km"
+    },
+    {
+      "question": "A recipe serves 4 people and uses 200g flour. How much flour for 6 people?",
+      "options": [
+        "150g",
+        "200g",
+        "300g",
+        "400g"
+      ],
+      "correct": 2,
+      "explanation": "6/4 × 200g = 1.5 × 200g = 300g"
+    },
+    {
+      "question": "A box contains red and blue marbles in the ratio 2:3. If there are 10 red marbles, how many blue?",
+      "options": [
+        "6",
+        "12",
+        "15",
+        "20"
+      ],
+      "correct": 2,
+      "explanation": "Ratio 2:3 means for every 2 red, there are 3 blue. If 2 = 10, then 1 = 5, so 3 = 15 blue"
+    }
+  ]
+}

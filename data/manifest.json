@@ -1,0 +1,44 @@
+[
+  {
+    "id": "fractions-decimals-percentages",
+    "title": "Fractions, Decimals & Percentages",
+    "description": "Convert, compare, and calculate with fractions, decimals, and percentages.",
+    "questionCount": 32
+  },
+  {
+    "id": "ratios-rates",
+    "title": "Ratios & Rates",
+    "description": "Compare quantities, scale recipes and maps, and work with speed and unit rates.",
+    "questionCount": 6
+  },
+  {
+    "id": "algebra-patterns",
+    "title": "Algebra & Number Patterns",
+    "description": "Solve equations, simplify expressions, and continue number sequences.",
+    "questionCount": 41
+  },
+  {
+    "id": "measurement-units",
+    "title": "Measurement & Units",
+    "description": "Perimeter, area, volume, unit conversions, time, and angle measurements.",
+    "questionCount": 24
+  },
+  {
+    "id": "geometry-shape",
+    "title": "Geometry & Shape",
+    "description": "Angles, triangles, polygons, coordinates, symmetry, and similar shapes.",
+    "questionCount": 26
+  },
+  {
+    "id": "statistics-probability",
+    "title": "Statistics & Probability",
+    "description": "Mean, median, mode, range, charts, and probability.",
+    "questionCount": 14
+  },
+  {
+    "id": "money-financial",
+    "title": "Money & Financial Maths",
+    "description": "Discounts, interest, and everyday money calculations.",
+    "questionCount": 6
+  }
+]

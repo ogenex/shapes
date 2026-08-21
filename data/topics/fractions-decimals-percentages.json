@@ -1,0 +1,363 @@
+{
+  "id": "fractions-decimals-percentages",
+  "title": "Fractions, Decimals & Percentages",
+  "description": "Convert, compare, and calculate with fractions, decimals, and percentages.",
+  "questions": [
+    {
+      "question": "What is 3/4 + 1/8?",
+      "options": [
+        "4/12",
+        "7/8",
+        "4/8",
+        "7/4"
+      ],
+      "correct": 1,
+      "explanation": "Convert to common denominator: 3/4 = 6/8, so 6/8 + 1/8 = 7/8"
+    },
+    {
+      "question": "What is 0.6 × 0.4?",
+      "options": [
+        "1.0",
+        "0.24",
+        "0.10",
+        "2.4"
+      ],
+      "correct": 1,
+      "explanation": "Convert: 6/10 × 4/10 = 24/100 = 0.24"
+    },
+    {
+      "question": "What is 15% of 200?",
+      "options": [
+        "15",
+        "30",
+        "45",
+        "50"
+      ],
+      "correct": 1,
+      "explanation": "15% = 15/100. 15/100 × 200 = 30"
+    },
+    {
+      "question": "What is 2/5 as a decimal?",
+      "options": [
+        "0.2",
+        "0.4",
+        "0.5",
+        "0.25"
+      ],
+      "correct": 1,
+      "explanation": "2/5 = 2 ÷ 5 = 0.4"
+    },
+    {
+      "question": "What is 1/2 + 1/3?",
+      "options": [
+        "2/5",
+        "3/5",
+        "5/6",
+        "2/3"
+      ],
+      "correct": 2,
+      "explanation": "Common denominator is 6: 3/6 + 2/6 = 5/6"
+    },
+    {
+      "question": "What is 25% of 80?",
+      "options": [
+        "5",
+        "20",
+        "55",
+        "200"
+      ],
+      "correct": 1,
+      "explanation": "25% = 1/4. 80 ÷ 4 = 20"
+    },
+    {
+      "question": "Express 0.35 as a fraction in simplest form.",
+      "options": [
+        "35/100",
+        "7/20",
+        "7/10",
+        "35/1000"
+      ],
+      "correct": 1,
+      "explanation": "0.35 = 35/100 = 7/20 (divide numerator and denominator by 5)"
+    },
+    {
+      "question": "What is 12% of 50?",
+      "options": [
+        "6",
+        "12",
+        "38",
+        "600"
+      ],
+      "correct": 0,
+      "explanation": "12% of 50 = 0.12 × 50 = 6"
+    },
+    {
+      "question": "What is 5/6 - 1/3?",
+      "options": [
+        "4/3",
+        "1/2",
+        "1/3",
+        "4/6"
+      ],
+      "correct": 1,
+      "explanation": "Common denominator is 6: 5/6 - 2/6 = 3/6 = 1/2"
+    },
+    {
+      "question": "Which fraction is equivalent to 2/3?",
+      "options": [
+        "3/4",
+        "4/6",
+        "3/5",
+        "5/8"
+      ],
+      "correct": 1,
+      "explanation": "2/3 = 4/6 (multiply both numerator and denominator by 2)"
+    },
+    {
+      "question": "Round 47.683 to the nearest whole number.",
+      "options": [
+        "47",
+        "47.6",
+        "47.7",
+        "48"
+      ],
+      "correct": 3,
+      "explanation": "The decimal part is 0.683, which is more than 0.5, so round up to 48"
+    },
+    {
+      "question": "What is 1/4 of 36?",
+      "options": [
+        "9",
+        "12",
+        "18",
+        "27"
+      ],
+      "correct": 0,
+      "explanation": "1/4 of 36 = 36 ÷ 4 = 9"
+    },
+    {
+      "question": "What is 3.5 × 2.4?",
+      "options": [
+        "5.9",
+        "6.0",
+        "8.4",
+        "8.9"
+      ],
+      "correct": 2,
+      "explanation": "3.5 × 2.4 = 35 × 24 ÷ 100 = 840 ÷ 100 = 8.4"
+    },
+    {
+      "question": "Convert 3/4 to a percentage.",
+      "options": [
+        "25%",
+        "50%",
+        "75%",
+        "100%"
+      ],
+      "correct": 2,
+      "explanation": "3/4 = 0.75 = 75%"
+    },
+    {
+      "question": "What is 3/5 + 1/4? (Express as a fraction)",
+      "options": [
+        "4/9",
+        "17/20",
+        "1/2",
+        "2/3"
+      ],
+      "correct": 1,
+      "explanation": "Common denominator is 20: 12/20 + 5/20 = 17/20"
+    },
+    {
+      "question": "If a price increases from $40 to $50, what is the percentage increase?",
+      "options": [
+        "10%",
+        "20%",
+        "25%",
+        "50%"
+      ],
+      "correct": 2,
+      "explanation": "Increase = $10. Percentage = ($10/$40) × 100 = 25%"
+    },
+    {
+      "question": "What is 1 2/3 as an improper fraction?",
+      "options": [
+        "2/3",
+        "3/5",
+        "5/3",
+        "8/3"
+      ],
+      "correct": 2,
+      "explanation": "1 2/3 = (1 × 3 + 2)/3 = (3 + 2)/3 = 5/3"
+    },
+    {
+      "question": "Estimate: 9.8 × 5.1",
+      "options": [
+        "30",
+        "40",
+        "50",
+        "60"
+      ],
+      "correct": 2,
+      "explanation": "Round: 10 × 5 = 50 (approximately)"
+    },
+    {
+      "question": "What is 0.25 ÷ 0.5?",
+      "options": [
+        "0.05",
+        "0.125",
+        "0.5",
+        "1.25"
+      ],
+      "correct": 2,
+      "explanation": "0.25 ÷ 0.5 = 25/100 ÷ 50/100 = 25/50 = 1/2 = 0.5"
+    },
+    {
+      "question": "What is 25% of 48?",
+      "options": [
+        "12",
+        "24",
+        "36",
+        "48"
+      ],
+      "correct": 0,
+      "explanation": "25% = 1/4. 48 ÷ 4 = 12"
+    },
+    {
+      "question": "A shop has 60 apples. 15 are spoiled. What percentage are good?",
+      "options": [
+        "25%",
+        "50%",
+        "75%",
+        "90%"
+      ],
+      "correct": 2,
+      "explanation": "Good apples = 60 - 15 = 45. Percentage = (45/60) × 100 = 75%"
+    },
+    {
+      "question": "What is 30% of 90?",
+      "options": [
+        "27",
+        "30",
+        "36",
+        "60"
+      ],
+      "correct": 0,
+      "explanation": "30% of 90 = 0.30 × 90 = 27"
+    },
+    {
+      "question": "If 60% of a number is 30, what is the number?",
+      "options": [
+        "18",
+        "36",
+        "50",
+        "90"
+      ],
+      "correct": 2,
+      "explanation": "If 60% = 30, then 100% = 30 ÷ 0.6 = 50"
+    },
+    {
+      "question": "What is 3/4 of 20?",
+      "options": [
+        "5",
+        "10",
+        "15",
+        "20"
+      ],
+      "correct": 2,
+      "explanation": "3/4 × 20 = (3 × 20) ÷ 4 = 60 ÷ 4 = 15"
+    },
+    {
+      "question": "What is 45% of 200?",
+      "options": [
+        "45",
+        "90",
+        "100",
+        "155"
+      ],
+      "correct": 1,
+      "explanation": "45% of 200 = 0.45 × 200 = 90"
+    },
+    {
+      "question": "What is 7/8 - 3/8?",
+      "options": [
+        "1/2",
+        "4/16",
+        "10/8",
+        "4/8"
+      ],
+      "correct": 0,
+      "explanation": "7/8 - 3/8 = 4/8 = 1/2"
+    },
+    {
+      "question": "What is 20% of 35?",
+      "options": [
+        "7",
+        "15",
+        "20",
+        "28"
+      ],
+      "correct": 0,
+      "explanation": "20% of 35 = 0.2 × 35 = 7"
+    },
+    {
+      "question": "What is 0.8 as a fraction?",
+      "options": [
+        "1/8",
+        "4/5",
+        "8/10",
+        "4/10"
+      ],
+      "correct": 1,
+      "explanation": "0.8 = 8/10 = 4/5 (in simplest form)"
+    },
+    {
+      "question": "What fraction of the shape is shaded?",
+      "options": [
+        "1/4",
+        "1/2",
+        "3/4",
+        "2/3"
+      ],
+      "correct": 1,
+      "explanation": "2 out of 4 equal sections are shaded = 2/4 = 1/2",
+      "visual": "<svg viewBox=\"0 0 240 100\" width=\"280\">\n                    <rect x=\"10\" y=\"20\" width=\"55\" height=\"55\" fill=\"#90caf9\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                    <rect x=\"65\" y=\"20\" width=\"55\" height=\"55\" fill=\"white\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                    <rect x=\"120\" y=\"20\" width=\"55\" height=\"55\" fill=\"#90caf9\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                    <rect x=\"175\" y=\"20\" width=\"55\" height=\"55\" fill=\"white\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                </svg>"
+    },
+    {
+      "question": "What number is the arrow pointing to on this number line?",
+      "options": [
+        "4",
+        "4.5",
+        "5",
+        "5.5"
+      ],
+      "correct": 1,
+      "explanation": "The arrow points halfway between 4 and 5, which is 4.5",
+      "visual": "<svg viewBox=\"0 0 280 90\" width=\"320\">\n                    <line x1=\"20\" y1=\"50\" x2=\"260\" y2=\"50\" stroke=\"#333\" stroke-width=\"2\"/>\n                    <line x1=\"20\" y1=\"45\" x2=\"20\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"20\" y=\"70\" font-size=\"11\" text-anchor=\"middle\">0</text><line x1=\"50\" y1=\"45\" x2=\"50\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50\" y=\"70\" font-size=\"11\" text-anchor=\"middle\">1</text><line x1=\"80\" y1=\"45\" x2=\"80\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"80\" y=\"70\" font-size=\"11\" text-anchor=\"middle\">2</text><line x1=\"110\" y1=\"45\" x2=\"110\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"110\" y=\"70\" font-size=\"11\" text-anchor=\"middle\">3</text><line x1=\"140\" y1=\"45\" x2=\"140\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"140\" y=\"70\" font-size=\"11\" text-anchor=\"middle\">4</text><line x1=\"170\" y1=\"45\" x2=\"170\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"170\" y=\"70\" font-size=\"11\" text-anchor=\"middle\">5</text><line x1=\"200\" y1=\"45\" x2=\"200\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200\" y=\"70\" font-size=\"11\" text-anchor=\"middle\">6</text><line x1=\"230\" y1=\"45\" x2=\"230\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"230\" y=\"70\" font-size=\"11\" text-anchor=\"middle\">7</text><line x1=\"260\" y1=\"45\" x2=\"260\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"260\" y=\"70\" font-size=\"11\" text-anchor=\"middle\">8</text>\n                    <polygon points=\"155,15 145,35 165,35\" fill=\"#e53935\"/>\n                    <text x=\"155\" y=\"12\" font-size=\"11\" text-anchor=\"middle\" fill=\"#e53935\" font-weight=\"bold\">?</text>\n                </svg>"
+    },
+    {
+      "question": "Which fraction does the shaded number line segment represent?",
+      "options": [
+        "1/6",
+        "2/6",
+        "3/6",
+        "4/6"
+      ],
+      "correct": 1,
+      "explanation": "The line is divided into 6 equal parts, and the shaded section covers 2 of them = 2/6",
+      "visual": "<svg viewBox=\"0 0 280 80\" width=\"320\">\n                    <line x1=\"20\" y1=\"40\" x2=\"260\" y2=\"40\" stroke=\"#333\" stroke-width=\"2\"/>\n                    <rect x=\"20\" y=\"35\" width=\"90\" height=\"10\" fill=\"#42a5f5\"/>\n                    <line x1=\"20\" y1=\"35\" x2=\"20\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"60\" y1=\"35\" x2=\"60\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"100\" y1=\"35\" x2=\"100\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"140\" y1=\"35\" x2=\"140\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"180\" y1=\"35\" x2=\"180\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"220\" y1=\"35\" x2=\"220\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"260\" y1=\"35\" x2=\"260\" y2=\"45\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                    <text x=\"20\" y=\"60\" font-size=\"11\" text-anchor=\"middle\">0</text>\n                    <text x=\"260\" y=\"60\" font-size=\"11\" text-anchor=\"middle\">1</text>\n                </svg>"
+    },
+    {
+      "question": "What percentage of this grid is shaded?",
+      "options": [
+        "20%",
+        "30%",
+        "40%",
+        "50%"
+      ],
+      "correct": 1,
+      "explanation": "There are 100 squares total. 30 are shaded, so 30/100 = 30%",
+      "visual": "<svg viewBox=\"0 0 220 220\" width=\"240\">\n                    <rect x=\"10\" y=\"10\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"30\" y=\"10\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"50\" y=\"10\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"70\" y=\"10\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"90\" y=\"10\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"110\" y=\"10\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"130\" y=\"10\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"150\" y=\"10\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"170\" y=\"10\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"190\" y=\"10\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"10\" y=\"30\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"30\" y=\"30\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"50\" y=\"30\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"70\" y=\"30\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"90\" y=\"30\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"110\" y=\"30\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"130\" y=\"30\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"150\" y=\"30\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"170\" y=\"30\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"190\" y=\"30\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"10\" y=\"50\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"30\" y=\"50\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"50\" y=\"50\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"70\" y=\"50\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"90\" y=\"50\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"110\" y=\"50\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"130\" y=\"50\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"150\" y=\"50\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"170\" y=\"50\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"190\" y=\"50\" width=\"20\" height=\"20\" fill=\"#ef5350\" stroke=\"#ccc\"/><rect x=\"10\" y=\"70\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"30\" y=\"70\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"50\" y=\"70\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"70\" y=\"70\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"90\" y=\"70\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"110\" y=\"70\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"130\" y=\"70\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"150\" y=\"70\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"170\" y=\"70\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"190\" y=\"70\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"10\" y=\"90\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"30\" y=\"90\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"50\" y=\"90\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"70\" y=\"90\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"90\" y=\"90\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"110\" y=\"90\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"130\" y=\"90\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"150\" y=\"90\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"170\" y=\"90\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"190\" y=\"90\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"10\" y=\"110\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"30\" y=\"110\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"50\" y=\"110\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"70\" y=\"110\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"90\" y=\"110\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"110\" y=\"110\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"130\" y=\"110\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"150\" y=\"110\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"170\" y=\"110\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"190\" y=\"110\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"10\" y=\"130\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"30\" y=\"130\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"50\" y=\"130\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"70\" y=\"130\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"90\" y=\"130\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"110\" y=\"130\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"130\" y=\"130\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"150\" y=\"130\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"170\" y=\"130\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"190\" y=\"130\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"10\" y=\"150\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"30\" y=\"150\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"50\" y=\"150\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"70\" y=\"150\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"90\" y=\"150\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"110\" y=\"150\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"130\" y=\"150\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"150\" y=\"150\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"170\" y=\"150\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"190\" y=\"150\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"10\" y=\"170\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"30\" y=\"170\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"50\" y=\"170\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"70\" y=\"170\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"90\" y=\"170\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"110\" y=\"170\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"130\" y=\"170\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"150\" y=\"170\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"170\" y=\"170\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"190\" y=\"170\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"10\" y=\"190\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"30\" y=\"190\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"50\" y=\"190\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"70\" y=\"190\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"90\" y=\"190\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"110\" y=\"190\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"130\" y=\"190\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"150\" y=\"190\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"170\" y=\"190\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/><rect x=\"190\" y=\"190\" width=\"20\" height=\"20\" fill=\"white\" stroke=\"#ccc\"/>\n                </svg>"
+    }
+  ]
+}

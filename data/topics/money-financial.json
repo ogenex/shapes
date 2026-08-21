@@ -1,0 +1,73 @@
+{
+  "id": "money-financial",
+  "title": "Money & Financial Maths",
+  "description": "Discounts, interest, and everyday money calculations.",
+  "questions": [
+    {
+      "question": "A shirt costs $45. It's on sale for 20% off. What's the sale price?",
+      "options": [
+        "$25",
+        "$36",
+        "$40",
+        "$9"
+      ],
+      "correct": 1,
+      "explanation": "20% of $45 = $9. So $45 - $9 = $36"
+    },
+    {
+      "question": "If a book costs $18 and you get a 33% discount, what do you pay (rounded)?",
+      "options": [
+        "$6",
+        "$9",
+        "$12",
+        "$15"
+      ],
+      "correct": 2,
+      "explanation": "33% of $18 ≈ $6. So $18 - $6 = $12"
+    },
+    {
+      "question": "If a bank account earns simple interest, and I invest $100 at 5% per year for 2 years, how much interest do I earn?",
+      "options": [
+        "$5",
+        "$10",
+        "$50",
+        "$100"
+      ],
+      "correct": 1,
+      "explanation": "Simple interest = Principal × Rate × Time = $100 × 0.05 × 2 = $10"
+    },
+    {
+      "question": "A jacket is priced at $80. After a 15% discount, what's the new price?",
+      "options": [
+        "$65",
+        "$68",
+        "$70",
+        "$92"
+      ],
+      "correct": 1,
+      "explanation": "15% of $80 = $12. $80 - $12 = $68"
+    },
+    {
+      "question": "A drink costs $2.50. What's the total for 8 drinks?",
+      "options": [
+        "$10",
+        "$16.50",
+        "$20",
+        "$25"
+      ],
+      "correct": 2,
+      "explanation": "$2.50 × 8 = $20"
+    },
+    {
+      "question": "A bank account has $500. It earns 10% interest per year. How much after 1 year?",
+      "options": [
+        "$510",
+        "$550",
+        "$600",
+        "$1000"
+      ],
+      "correct": 1,
+      "explanation": "Interest = $500 × 0.10 = $50. Total = $500 + $50 = $550"
+    }
+  ]
+}

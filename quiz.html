@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Year 7 NAPLAN Maths Practice</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/quiz.css">
+</head>
+<body>
+    <div class="container">
+        <a class="back-link no-print" href="index.html">← All topics</a>
+
+        <p id="loadingState" class="loading-state">Loading questions…</p>
+        <p id="errorState" class="error-state hidden">Couldn't find that topic. <a href="index.html">Go back to all topics</a>.</p>
+
+        <div id="quizRoot" class="hidden">
+            <h1 id="topicTitle" class="topic-title"></h1>
+
+            <div id="resumeBanner" class="resume-banner hidden no-print">
+                <span id="resumeText"></span>
+                <span>
+                    <button id="resumeButton" class="button">Resume</button>
+                    <button id="discardResumeButton" class="button secondary">Start over</button>
+                </span>
+            </div>
+
+            <div id="testScreen" class="hidden">
+                <div class="progress-bar">
+                    <span class="progress-text">Question <span id="currentQ">1</span>/<span id="totalQ">1</span></span>
+                    <span class="score">Score: <span id="scoreDisplay">0</span></span>
+                </div>
+
+                <h2 class="question-title" id="questionText"></h2>
+
+                <div id="visualWrapper" class="visual-container hidden"></div>
+
+                <div class="options" id="optionsContainer"></div>
+
+                <div id="feedbackContainer" class="hidden"></div>
+
+                <button class="button hidden" id="nextButton">Next question</button>
+            </div>
+
+            <div id="resultsScreen" class="results-screen hidden">
+                <h2 class="results-title">Topic complete</h2>
+                <p class="results-subtitle">Here's how you did</p>
+
+                <div class="score-display" id="percentageDisplay">0%</div>
+
+                <div class="score-detail">
+                    You got <strong><span id="correctCount">0</span> out of <span id="totalCount">0</span></strong> correct
+                </div>
+
+                <div class="feedback-message" id="feedbackMessage"></div>
+
+                <div id="historyList" class="history-list no-print"></div>
+
+                <div id="reviewSection" class="review-section hidden">
+                    <button id="reviewToggle" class="button no-print"></button>
+                    <div id="reviewList" class="review-list hidden"></div>
+                </div>
+
+                <div class="results-actions no-print">
+                    <button class="button" id="printButton">Print results</button>
+                    <button class="button" id="restartButton">Try again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/quiz.js"></script>
+</body>
+</html>

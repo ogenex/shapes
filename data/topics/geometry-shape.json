@@ -1,0 +1,302 @@
+{
+  "id": "geometry-shape",
+  "title": "Geometry & Shape",
+  "description": "Angles, triangles, polygons, coordinates, symmetry, and similar shapes.",
+  "questions": [
+    {
+      "question": "The angles in a triangle sum to 180°. If two angles are 60° and 55°, what is the third?",
+      "options": [
+        "55°",
+        "65°",
+        "120°",
+        "115°"
+      ],
+      "correct": 1,
+      "explanation": "180° - 60° - 55° = 65°"
+    },
+    {
+      "question": "A triangle has sides of 3 cm, 4 cm, and 5 cm. Is it a right triangle?",
+      "options": [
+        "No",
+        "Yes, because 3² + 4² = 5²",
+        "Only if it's equilateral",
+        "Cannot be determined"
+      ],
+      "correct": 1,
+      "explanation": "3² + 4² = 9 + 16 = 25 = 5². This satisfies Pythagoras' theorem."
+    },
+    {
+      "question": "What are the coordinates of point A on a graph at 3 units right and 2 units up?",
+      "options": [
+        "(2, 3)",
+        "(3, 2)",
+        "(0, 3)",
+        "(3, 0)"
+      ],
+      "correct": 1,
+      "explanation": "Coordinates are written as (x, y), where x is right/left and y is up/down. So (3, 2)."
+    },
+    {
+      "question": "Two angles in a straight line sum to 180°. If one angle is 125°, what's the other?",
+      "options": [
+        "55°",
+        "65°",
+        "75°",
+        "125°"
+      ],
+      "correct": 0,
+      "explanation": "180° - 125° = 55° (these are supplementary angles)"
+    },
+    {
+      "question": "How many sides does a heptagon have?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "8"
+      ],
+      "correct": 2,
+      "explanation": "A heptagon is a 7-sided polygon (hept = 7)"
+    },
+    {
+      "question": "Two parallel lines are cut by a transversal. If one angle is 120°, what's the alternate angle?",
+      "options": [
+        "60°",
+        "120°",
+        "240°",
+        "30°"
+      ],
+      "correct": 1,
+      "explanation": "Alternate angles are equal when formed by parallel lines and a transversal. So it's also 120°"
+    },
+    {
+      "question": "A triangle has angles 45°, 75°, and x°. What's x?",
+      "options": [
+        "60°",
+        "70°",
+        "80°",
+        "120°"
+      ],
+      "correct": 0,
+      "explanation": "Angles in a triangle sum to 180°: 45 + 75 + x = 180, so x = 180 - 120 = 60°"
+    },
+    {
+      "question": "If a right angle is divided into two angles of 35° and x°, what is x?",
+      "options": [
+        "35°",
+        "45°",
+        "55°",
+        "90°"
+      ],
+      "correct": 2,
+      "explanation": "A right angle = 90°. 90 - 35 = 55°"
+    },
+    {
+      "question": "How many faces does a cube have?",
+      "options": [
+        "4",
+        "6",
+        "8",
+        "12"
+      ],
+      "correct": 1,
+      "explanation": "A cube has 6 square faces"
+    },
+    {
+      "question": "What is the sum of angles in a quadrilateral?",
+      "options": [
+        "180°",
+        "270°",
+        "360°",
+        "540°"
+      ],
+      "correct": 2,
+      "explanation": "The sum of interior angles in any quadrilateral is 360°"
+    },
+    {
+      "question": "Vertically opposite angles are:",
+      "options": [
+        "different",
+        "equal",
+        "supplementary",
+        "complementary"
+      ],
+      "correct": 1,
+      "explanation": "When two straight lines intersect, vertically opposite angles are always equal"
+    },
+    {
+      "question": "How many edges does a triangular prism have?",
+      "options": [
+        "5",
+        "6",
+        "9",
+        "12"
+      ],
+      "correct": 2,
+      "explanation": "A triangular prism has 3 edges on top triangle, 3 on bottom, and 3 connecting them = 9 edges"
+    },
+    {
+      "question": "A rectangle is enlarged by a scale factor of 2. By what factor does its area increase?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "8"
+      ],
+      "correct": 2,
+      "explanation": "When linear dimensions double, area is multiplied by 2² = 4"
+    },
+    {
+      "question": "What are the coordinates of the origin on a coordinate plane?",
+      "options": [
+        "(1, 1)",
+        "(0, 0)",
+        "(1, 0)",
+        "(0, 1)"
+      ],
+      "correct": 1,
+      "explanation": "The origin is where the x and y axes intersect, at (0, 0)"
+    },
+    {
+      "question": "Two angles are complementary. One is 35°. What's the other?",
+      "options": [
+        "35°",
+        "55°",
+        "125°",
+        "145°"
+      ],
+      "correct": 1,
+      "explanation": "Complementary angles sum to 90°: 90 - 35 = 55°"
+    },
+    {
+      "question": "A triangle has sides 5 cm, 12 cm, and 13 cm. Is it a right triangle?",
+      "options": [
+        "No",
+        "Yes, because 5² + 12² = 13²",
+        "Impossible to determine",
+        "Only if isosceles"
+      ],
+      "correct": 1,
+      "explanation": "5² + 12² = 25 + 144 = 169 = 13². This satisfies the Pythagorean theorem."
+    },
+    {
+      "question": "The interior angle of a regular pentagon is?",
+      "options": [
+        "60°",
+        "72°",
+        "108°",
+        "120°"
+      ],
+      "correct": 2,
+      "explanation": "Sum of interior angles = (5-2) × 180° = 540°. Each angle = 540° ÷ 5 = 108°"
+    },
+    {
+      "question": "What is the value of angle x in this diagram?",
+      "options": [
+        "40°",
+        "50°",
+        "60°",
+        "130°"
+      ],
+      "correct": 1,
+      "explanation": "Angles on a straight line sum to 180°. So x = 180° - 130° = 50°",
+      "visual": "<svg viewBox=\"0 0 240 160\" width=\"280\">\n                    <line x1=\"20\" y1=\"130\" x2=\"220\" y2=\"130\" stroke=\"#333\" stroke-width=\"2\"/>\n                    <line x1=\"120\" y1=\"130\" x2=\"80\" y2=\"30\" stroke=\"#333\" stroke-width=\"2\"/>\n                    <path d=\"M 100 130 A 30 30 0 0 0 108 102\" fill=\"none\" stroke=\"#e53935\" stroke-width=\"1.5\"/>\n                    <text x=\"95\" y=\"115\" font-size=\"13\" fill=\"#e53935\">x°</text>\n                    <text x=\"150\" y=\"115\" font-size=\"13\" fill=\"#333\">130°</text>\n                    <path d=\"M 140 130 A 30 30 0 0 0 132 102\" fill=\"none\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                </svg>"
+    },
+    {
+      "question": "Which point on the coordinate plane represents (3, 2)?",
+      "options": [
+        "Point A",
+        "Point B",
+        "Point C",
+        "Point D"
+      ],
+      "correct": 0,
+      "explanation": "(3, 2) means 3 units right and 2 units up from the origin. That's Point A.",
+      "visual": "<svg viewBox=\"0 0 220 220\" width=\"260\">\n                    <line x1=\"20\" y1=\"200\" x2=\"200\" y2=\"200\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                    <line x1=\"20\" y1=\"200\" x2=\"20\" y2=\"20\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                    <line x1=\"56\" y1=\"196\" x2=\"56\" y2=\"204\" stroke=\"#333\"/><text x=\"56\" y=\"216\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"92\" y1=\"196\" x2=\"92\" y2=\"204\" stroke=\"#333\"/><text x=\"92\" y=\"216\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"128\" y1=\"196\" x2=\"128\" y2=\"204\" stroke=\"#333\"/><text x=\"128\" y=\"216\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"164\" y1=\"196\" x2=\"164\" y2=\"204\" stroke=\"#333\"/><text x=\"164\" y=\"216\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"200\" y1=\"196\" x2=\"200\" y2=\"204\" stroke=\"#333\"/><text x=\"200\" y=\"216\" font-size=\"10\" text-anchor=\"middle\">5</text>\n                    <line x1=\"16\" y1=\"164\" x2=\"24\" y2=\"164\" stroke=\"#333\"/><text x=\"10\" y=\"168\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"16\" y1=\"128\" x2=\"24\" y2=\"128\" stroke=\"#333\"/><text x=\"10\" y=\"132\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"16\" y1=\"92\" x2=\"24\" y2=\"92\" stroke=\"#333\"/><text x=\"10\" y=\"96\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"16\" y1=\"56\" x2=\"24\" y2=\"56\" stroke=\"#333\"/><text x=\"10\" y=\"60\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"16\" y1=\"20\" x2=\"24\" y2=\"20\" stroke=\"#333\"/><text x=\"10\" y=\"24\" font-size=\"10\" text-anchor=\"middle\">5</text>\n                    <circle cx=\"128\" cy=\"128\" r=\"5\" fill=\"#e53935\"/>\n                    <text x=\"138\" y=\"122\" font-size=\"12\" fill=\"#e53935\">A</text>\n                    <circle cx=\"92\" cy=\"128\" r=\"5\" fill=\"#1e88e5\"/>\n                    <text x=\"80\" y=\"122\" font-size=\"12\" fill=\"#1e88e5\">B</text>\n                    <circle cx=\"128\" cy=\"92\" r=\"5\" fill=\"#43a047\"/>\n                    <text x=\"138\" y=\"88\" font-size=\"12\" fill=\"#43a047\">C</text>\n                    <circle cx=\"92\" cy=\"92\" r=\"5\" fill=\"#fb8c00\"/>\n                    <text x=\"80\" y=\"88\" font-size=\"12\" fill=\"#fb8c00\">D</text>\n                </svg>"
+    },
+    {
+      "question": "How many lines of symmetry does this shape have?",
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 2,
+      "explanation": "A regular pentagon has 5 lines of symmetry, one through each vertex and the midpoint of the opposite side",
+      "visual": "<svg viewBox=\"0 0 200 200\" width=\"220\">\n                    <polygon points=\"100,20 180,70 150,170 50,170 20,70\" fill=\"#f3e5f5\" stroke=\"#8e24aa\" stroke-width=\"2\"/>\n                </svg>"
+    },
+    {
+      "question": "What is the missing side length of this right-angled triangle?",
+      "options": [
+        "4 cm",
+        "5 cm",
+        "6 cm",
+        "7 cm"
+      ],
+      "correct": 1,
+      "explanation": "Using Pythagoras: c² = 3² + 4² = 9 + 16 = 25, so c = √25 = 5 cm",
+      "visual": "<svg viewBox=\"0 0 220 180\" width=\"260\">\n                    <polygon points=\"30,150 30,50 150,150\" fill=\"#e8f5e9\" stroke=\"#2e7d32\" stroke-width=\"2\"/>\n                    <rect x=\"30\" y=\"135\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"#2e7d32\" stroke-width=\"1.5\"/>\n                    <text x=\"10\" y=\"105\" font-size=\"13\">3 cm</text>\n                    <text x=\"85\" y=\"170\" font-size=\"13\">4 cm</text>\n                    <text x=\"100\" y=\"95\" font-size=\"13\" fill=\"#e53935\">? cm</text>\n                </svg>"
+    },
+    {
+      "question": "What shape results from this net when folded?",
+      "options": [
+        "Pyramid",
+        "Cube",
+        "Cylinder",
+        "Cone"
+      ],
+      "correct": 1,
+      "explanation": "This net has 6 identical squares arranged in a cross pattern, which folds into a cube",
+      "visual": "<svg viewBox=\"0 0 220 180\" width=\"260\">\n                    <rect x=\"70\" y=\"20\" width=\"50\" height=\"50\" fill=\"#fff9c4\" stroke=\"#f57f17\" stroke-width=\"1.5\"/>\n                    <rect x=\"20\" y=\"70\" width=\"50\" height=\"50\" fill=\"#fff9c4\" stroke=\"#f57f17\" stroke-width=\"1.5\"/>\n                    <rect x=\"70\" y=\"70\" width=\"50\" height=\"50\" fill=\"#fff9c4\" stroke=\"#f57f17\" stroke-width=\"1.5\"/>\n                    <rect x=\"120\" y=\"70\" width=\"50\" height=\"50\" fill=\"#fff9c4\" stroke=\"#f57f17\" stroke-width=\"1.5\"/>\n                    <rect x=\"170\" y=\"70\" width=\"50\" height=\"50\" fill=\"#fff9c4\" stroke=\"#f57f17\" stroke-width=\"1.5\"/>\n                    <rect x=\"70\" y=\"120\" width=\"50\" height=\"50\" fill=\"#fff9c4\" stroke=\"#f57f17\" stroke-width=\"1.5\"/>\n                </svg>"
+    },
+    {
+      "question": "What is the scale factor from the small triangle to the large triangle?",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "correct": 1,
+      "explanation": "Scale factor = 9 ÷ 3 = 3. The large triangle is 3 times the size of the small one",
+      "visual": "<svg viewBox=\"0 0 260 160\" width=\"300\">\n                    <polygon points=\"30,130 30,100 60,130\" fill=\"#fff3e0\" stroke=\"#f57c00\" stroke-width=\"2\"/>\n                    <polygon points=\"100,130 100,40 190,130\" fill=\"#ffe0b2\" stroke=\"#f57c00\" stroke-width=\"2\"/>\n                    <text x=\"40\" y=\"145\" font-size=\"10\">3cm</text>\n                    <text x=\"140\" y=\"145\" font-size=\"12\">9cm</text>\n                </svg>"
+    },
+    {
+      "question": "What is the missing angle in this quadrilateral?",
+      "options": [
+        "75°",
+        "85°",
+        "90°",
+        "95°"
+      ],
+      "correct": 1,
+      "explanation": "Angles in a quadrilateral sum to 360°. x = 360 - 90 - 85 - 100 = 85°",
+      "visual": "<svg viewBox=\"0 0 220 180\" width=\"260\">\n                    <polygon points=\"40,40 180,30 190,140 30,150\" fill=\"#e1f5fe\" stroke=\"#0277bd\" stroke-width=\"2\"/>\n                    <text x=\"45\" y=\"55\" font-size=\"12\">90°</text>\n                    <text x=\"160\" y=\"50\" font-size=\"12\">85°</text>\n                    <text x=\"170\" y=\"130\" font-size=\"12\">100°</text>\n                    <text x=\"45\" y=\"140\" font-size=\"12\" fill=\"#e53935\">x°</text>\n                </svg>"
+    },
+    {
+      "question": "A ladder leans against a wall forming a right triangle. If the angle marked is 90°, and two sides are 6m and 8m, what's the hypotenuse?",
+      "options": [
+        "9 m",
+        "10 m",
+        "12 m",
+        "14 m"
+      ],
+      "correct": 1,
+      "explanation": "Using Pythagoras: c² = 6² + 8² = 36 + 64 = 100, so c = √100 = 10 m",
+      "visual": "<svg viewBox=\"0 0 220 180\" width=\"260\">\n                    <polygon points=\"30,150 30,30 170,150\" fill=\"#f3e5f5\" stroke=\"#7b1fa2\" stroke-width=\"2\"/>\n                    <rect x=\"30\" y=\"135\" width=\"15\" height=\"15\" fill=\"none\" stroke=\"#7b1fa2\" stroke-width=\"1.5\"/>\n                    <text x=\"5\" y=\"95\" font-size=\"13\">8 m</text>\n                    <text x=\"90\" y=\"170\" font-size=\"13\">6 m</text>\n                    <text x=\"95\" y=\"80\" font-size=\"13\" fill=\"#e53935\">?</text>\n                </svg>"
+    },
+    {
+      "question": "What is the missing length x in this pair of similar triangles?",
+      "options": [
+        "6 cm",
+        "9 cm",
+        "12 cm",
+        "16 cm"
+      ],
+      "correct": 2,
+      "explanation": "The triangles are similar with scale factor 9 ÷ 3 = 3. So x = 4 × 3 = 12 cm",
+      "visual": "<svg viewBox=\"0 0 260 160\" width=\"300\">\n                    <polygon points=\"30,130 30,90 70,130\" fill=\"#e1f5fe\" stroke=\"#0277bd\" stroke-width=\"2\"/>\n                    <polygon points=\"120,130 120,50 220,130\" fill=\"#b3e5fc\" stroke=\"#0277bd\" stroke-width=\"2\"/>\n                    <text x=\"10\" y=\"112\" font-size=\"11\">4cm</text>\n                    <text x=\"45\" y=\"145\" font-size=\"11\">3cm</text>\n                    <text x=\"95\" y=\"92\" font-size=\"12\">?</text>\n                    <text x=\"165\" y=\"145\" font-size=\"12\">9cm</text>\n                </svg>"
+    }
+  ]
+}
