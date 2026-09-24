@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in — Maths Practice</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <main class="login-wrap">
+        <h1>Maths Practice</h1>
+        <p class="subtitle">Sign in to keep track of your progress on any device</p>
+
+        <div class="card">
+            <p id="loadingState" class="muted center">Loading…</p>
+
+            <div id="notConfigured" class="hidden">
+                <p class="notice">Accounts aren't set up on this site yet, so progress is saved in this browser only.</p>
+                <a class="button primary" href="index.html">Start practising</a>
+            </div>
+
+            <div id="authViews" class="hidden">
+                <div class="tabs" role="tablist">
+                    <button type="button" role="tab" class="tab" id="tabSignIn" aria-selected="true">Sign in</button>
+                    <button type="button" role="tab" class="tab" id="tabSignUp" aria-selected="false">Create account</button>
+                </div>
+
+                <p id="message" class="message hidden" role="status"></p>
+
+                <form id="signInForm" class="form" novalidate>
+                    <label>Email
+                        <input type="email" name="email" autocomplete="email" required>
+                    </label>
+                    <label>Password
+                        <input type="password" name="password" autocomplete="current-password" required>
+                    </label>
+                    <button type="submit" class="button primary">Sign in</button>
+                    <button type="button" class="linklike small-link" id="forgotLink">Forgot your password?</button>
+                </form>
+
+                <form id="signUpForm" class="form hidden" novalidate>
+                    <label>Your name
+                        <input type="text" name="displayName" autocomplete="nickname" maxlength="60" required
+                               placeholder="How it appears to your tutor">
+                    </label>
+                    <label>Email
+                        <input type="email" name="email" autocomplete="email" required>
+                    </label>
+                    <label>Password
+                        <input type="password" name="password" autocomplete="new-password" minlength="6" required
+                               placeholder="At least 6 characters">
+                    </label>
+                    <fieldset class="role-choice">
+                        <legend>I'm a…</legend>
+                        <label class="radio"><input type="radio" name="role" value="student" checked> Student</label>
+                        <label class="radio"><input type="radio" name="role" value="tutor"> Tutor or parent</label>
+                    </fieldset>
+                    <p class="hint" id="tutorHint">Tutor and parent accounts get a code that students enter to share their progress with you.</p>
+                    <button type="submit" class="button primary">Create account</button>
+                </form>
+
+                <form id="forgotForm" class="form hidden" novalidate>
+                    <p class="hint">Enter your email and we'll send you a link to reset your password.</p>
+                    <label>Email
+                        <input type="email" name="email" autocomplete="email" required>
+                    </label>
+                    <button type="submit" class="button primary">Send reset link</button>
+                    <button type="button" class="linklike small-link" id="backToSignIn">Back to sign in</button>
+                </form>
+
+                <form id="resetForm" class="form hidden" novalidate>
+                    <p class="hint">Choose a new password.</p>
+                    <label>New password
+                        <input type="password" name="password" autocomplete="new-password" minlength="6" required>
+                    </label>
+                    <button type="submit" class="button primary">Save new password</button>
+                </form>
+
+                <div class="divider"><span>or</span></div>
+                <button type="button" class="button secondary" id="guestButton">Continue without an account</button>
+                <p class="hint center">Guest progress is saved on this device only.</p>
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="assets/js/login.js"></script>
+</body>
+</html>

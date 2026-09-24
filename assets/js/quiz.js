@@ -1,11 +1,14 @@
-import { createEngine, prepareAttempt, getResume, clearResume } from './quiz-engine.js';
+import { createEngine, prepareAttempt } from './quiz-engine.js';
+import { requireUser } from './auth.js';
+import { createStore } from './store.js';
+import { renderUserBar } from './userbar.js';
 
 const elementIds = [
     'questionText', 'currentQ', 'totalQ', 'scoreDisplay', 'visualWrapper',
     'optionsContainer', 'feedbackContainer', 'nextButton', 'testScreen',
     'resultsScreen', 'percentageDisplay', 'correctCount', 'totalCount',
     'feedbackMessage', 'reviewSection', 'reviewToggle', 'reviewList',
-    'historyList', 'restartButton', 'printButton',
+    'historyList', 'restartButton', 'printButton', 'saveStatus',
 ];
 
 function collectElements() {
@@ -15,6 +18,14 @@ function collectElements() {
 }
 
 async function init() {
+    const user = await requireUser();
+    renderUserBar(user);
+    const store = createStore(user);
+    store.flushOutbox();
+    if (user.role === 'tutor') {
+        document.getElementById('dashboardButton').textContent = 'Go to my dashboard';
+    }
+
     const topicId = new URLSearchParams(location.search).get('topic');
     const loadingState = document.getElementById('loadingState');
     const errorState = document.getElementById('errorState');
@@ -40,15 +51,16 @@ async function init() {
     loadingState.classList.add('hidden');
     quizRoot.classList.remove('hidden');
     document.getElementById('topicTitle').textContent = topic.title;
-    document.title = topic.title + ' — Year 7 NAPLAN Maths Practice';
+    document.title = topic.title + ' — Maths Practice';
 
     const engine = createEngine({
         topicId,
         questions: prepareAttempt(topic.questions),
         elements: collectElements(),
+        store,
     });
 
-    const resume = getResume(topicId);
+    const resume = store.getResume(topicId);
     if (resume && resume.currentIndex < resume.questions.length) {
         const resumeBanner = document.getElementById('resumeBanner');
         resumeBanner.classList.remove('hidden');
@@ -59,7 +71,7 @@ async function init() {
             engine.start(resume);
         };
         document.getElementById('discardResumeButton').onclick = () => {
-            clearResume(topicId);
+            store.clearResume(topicId);
             resumeBanner.classList.add('hidden');
             engine.start();
         };

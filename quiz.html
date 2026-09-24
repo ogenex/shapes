@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Year 7 NAPLAN Maths Practice</title>
+    <title>Maths Practice</title>
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/quiz.css">
 </head>
 <body>
+    <header class="userbar" id="userBar"></header>
+
     <div class="container">
         <a class="back-link no-print" href="index.html">← All topics</a>
 
@@ -54,6 +56,8 @@
 
                 <div class="feedback-message" id="feedbackMessage"></div>
 
+                <p id="saveStatus" class="save-status hidden no-print" role="status"></p>
+
                 <div id="historyList" class="history-list no-print"></div>
 
                 <div id="reviewSection" class="review-section hidden">
@@ -64,6 +68,7 @@
                 <div class="results-actions no-print">
                     <button class="button" id="printButton">Print results</button>
                     <button class="button" id="restartButton">Try again</button>
+                    <a class="button secondary" id="dashboardButton" href="dashboard.html">See my progress</a>
                     <a class="button secondary" id="homeButton" href="index.html">Back to all topics</a>
                 </div>
             </div>

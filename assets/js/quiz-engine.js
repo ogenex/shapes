@@ -1,46 +1,4 @@
-const STORAGE_KEY = 'naplanQuiz:v1';
-const HISTORY_LIMIT = 10;
-
-function readStore() {
-    try {
-        return JSON.parse(localStorage.getItem(STORAGE_KEY)) || {};
-    } catch (e) {
-        return {};
-    }
-}
-
-function writeStore(store) {
-    try {
-        localStorage.setItem(STORAGE_KEY, JSON.stringify(store));
-    } catch (e) {
-        // localStorage unavailable (private browsing, quota) - progress just won't persist
-    }
-}
-
-function getTopicRecord(topicId) {
-    const store = readStore();
-    return store[topicId] || { resume: null, history: [] };
-}
-
-function saveTopicRecord(topicId, record) {
-    const store = readStore();
-    store[topicId] = record;
-    writeStore(store);
-}
-
-export function getHistory(topicId) {
-    return getTopicRecord(topicId).history;
-}
-
-export function getResume(topicId) {
-    return getTopicRecord(topicId).resume;
-}
-
-export function clearResume(topicId) {
-    const record = getTopicRecord(topicId);
-    record.resume = null;
-    saveTopicRecord(topicId, record);
-}
+import { escapeHtml, percent, shortDate } from './util.js';
 
 function shuffle(array) {
     const result = array.slice();
@@ -68,22 +26,7 @@ export function prepareAttempt(questions) {
     return shuffle(questions).map(shuffleQuestion);
 }
 
-export function recordCompletedAttempt(topicId, score, total) {
-    const record = getTopicRecord(topicId);
-    record.resume = null;
-    record.history = [{ date: new Date().toISOString(), score, total }]
-        .concat(record.history)
-        .slice(0, HISTORY_LIMIT);
-    saveTopicRecord(topicId, record);
-}
-
-export function saveResumeState(topicId, state) {
-    const record = getTopicRecord(topicId);
-    record.resume = state;
-    saveTopicRecord(topicId, record);
-}
-
-export function createEngine({ topicId, questions, elements }) {
+export function createEngine({ topicId, questions, elements, store }) {
     const state = {
         questions,
         currentIndex: 0,
@@ -97,7 +40,7 @@ export function createEngine({ topicId, questions, elements }) {
     }
 
     function persist() {
-        saveResumeState(topicId, {
+        store.saveResume(topicId, {
             questions: state.questions,
             currentIndex: state.currentIndex,
             score: state.score,
@@ -210,8 +153,33 @@ export function createEngine({ topicId, questions, elements }) {
         el('feedbackMessage').textContent = message;
 
         renderMissed();
-        recordCompletedAttempt(topicId, state.score, total);
-        renderHistory();
+        saveAndRenderHistory(total);
+    }
+
+    async function saveAndRenderHistory(total) {
+        const saveStatus = el('saveStatus');
+        saveStatus.classList.add('hidden');
+        el('historyList').innerHTML = '';
+
+        const result = await store.recordAttempt({
+            topicId,
+            score: state.score,
+            total,
+            missed: state.missed.map(m => m.question),
+            completedAt: new Date().toISOString(),
+        });
+        if (!result.saved) {
+            saveStatus.textContent =
+                'Couldn\'t reach the server, so this result is saved on this device for now. ' +
+                'It will be added to your account next time you open the site online.';
+            saveStatus.classList.remove('hidden');
+        }
+
+        try {
+            renderHistory(await store.listAttempts({ topicId, limit: 4 }));
+        } catch (e) {
+            // history is a nice-to-have; skip it if it can't load
+        }
     }
 
     function renderMissed() {
@@ -231,10 +199,10 @@ export function createEngine({ topicId, questions, elements }) {
                 const visualHtml = m.visual ? '<div class="visual-container">' + m.visual + '</div>' : '';
                 return (
                     '<div class="review-item">' +
-                    '<div class="review-question">' + m.question + '</div>' +
+                    '<div class="review-question">' + escapeHtml(m.question) + '</div>' +
                     visualHtml +
-                    '<div class="review-answer wrong">Your answer: ' + m.options[m.chosenIndex] + '</div>' +
-                    '<div class="review-answer right">Correct answer: ' + m.options[m.correctIndex] + '</div>' +
+                    '<div class="review-answer wrong">Your answer: ' + escapeHtml(m.options[m.chosenIndex]) + '</div>' +
+                    '<div class="review-answer right">Correct answer: ' + escapeHtml(m.options[m.correctIndex]) + '</div>' +
                     '<div class="review-explanation">' + m.explanation + '</div>' +
                     '</div>'
                 );
@@ -243,10 +211,9 @@ export function createEngine({ topicId, questions, elements }) {
         reviewList.classList.add('hidden');
     }
 
-    function renderHistory() {
-        const record = getTopicRecord(topicId);
+    function renderHistory(attempts) {
         const historyList = el('historyList');
-        const previous = record.history.slice(1, 4);
+        const previous = attempts.slice(1, 4);
         if (previous.length === 0) {
             historyList.innerHTML = '';
             return;
@@ -254,11 +221,10 @@ export function createEngine({ topicId, questions, elements }) {
         historyList.innerHTML =
             '<div class="history-label">Previous attempts</div>' +
             previous
-                .map(h => {
-                    const pct = Math.round((h.score / h.total) * 100);
-                    const date = new Date(h.date).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
-                    return '<div class="history-item">' + date + ' — ' + pct + '% (' + h.score + '/' + h.total + ')</div>';
-                })
+                .map(h =>
+                    '<div class="history-item">' + shortDate(h.completedAt) + ' — ' +
+                    percent(h.score, h.total) + '% (' + h.score + '/' + h.total + ')</div>'
+                )
                 .join('');
     }
 

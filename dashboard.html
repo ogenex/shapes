@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress — Maths Practice</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+    <header class="userbar wide" id="userBar"></header>
+
+    <main class="dash">
+        <p id="loadingState" class="state">Loading progress…</p>
+        <p id="errorState" class="state hidden"></p>
+
+        <!-- One student's progress (your own, or a linked student's for tutors) -->
+        <section id="studentView" class="hidden">
+            <a id="backToStudents" class="back-link hidden" href="dashboard.html">← All students</a>
+            <h1 id="studentName"></h1>
+            <p class="subtitle" id="studentSub"></p>
+
+            <div id="importBanner" class="banner hidden">
+                <span id="importText"></span>
+                <span class="banner-actions">
+                    <button type="button" class="button small primary" id="importButton">Add to my account</button>
+                    <button type="button" class="button small secondary" id="importDismiss">No thanks</button>
+                </span>
+            </div>
+
+            <div id="guestNote" class="banner info hidden">
+                <span>You're practising as a guest, so this progress lives on this device only.
+                    Create an account to keep it on any device and share it with a tutor or parent.</span>
+                <span class="banner-actions">
+                    <a class="button small primary" href="login.html?next=dashboard.html">Create account</a>
+                </span>
+            </div>
+
+            <div class="tiles" id="tiles"></div>
+
+            <section class="panel">
+                <h2>Progress by topic</h2>
+                <div class="table-scroll">
+                    <table class="topic-table" id="topicTable"></table>
+                </div>
+            </section>
+
+            <div class="two-col">
+                <section class="panel">
+                    <h2>Recent activity</h2>
+                    <div id="recentList"></div>
+                </section>
+                <section class="panel">
+                    <h2>Questions to revisit</h2>
+                    <p class="panel-note">Missed most often in recent attempts</p>
+                    <div id="missedList"></div>
+                </section>
+            </div>
+
+            <section class="panel hidden" id="sharingPanel">
+                <h2>Share your progress with a tutor or parent</h2>
+                <p class="panel-note">Ask them for their 6-character code. They'll be able to see your scores — not your email or password.</p>
+                <div id="tutorList"></div>
+                <form id="linkForm" class="inline-form" novalidate>
+                    <input type="text" name="code" maxlength="12" placeholder="e.g. K7Q2MX" autocomplete="off"
+                           aria-label="Tutor code" spellcheck="false">
+                    <button type="submit" class="button small primary">Share</button>
+                </form>
+                <p id="linkMessage" class="form-message hidden" role="status"></p>
+            </section>
+        </section>
+
+        <!-- Tutor / parent overview -->
+        <section id="tutorView" class="hidden">
+            <h1>My students</h1>
+            <p class="subtitle">Latest scores for every student who has shared their progress with you</p>
+
+            <section class="panel code-panel">
+                <div>
+                    <div class="code-label">Your tutor code</div>
+                    <div class="code" id="tutorCode">——————</div>
+                </div>
+                <div class="code-help">
+                    Students sign in, open <strong>My progress</strong>, and enter this code under
+                    “Share your progress”.
+                    <div class="code-actions">
+                        <button type="button" class="button small" id="copyCode">Copy code</button>
+                        <button type="button" class="button small secondary" id="newCode">Get a new code</button>
+                    </div>
+                    <p class="panel-note" id="codeNote"></p>
+                </div>
+            </section>
+
+            <section class="panel">
+                <h2>Latest score by topic</h2>
+                <div id="studentsEmpty" class="empty hidden">
+                    No students yet. Share your code above — students appear here as soon as they enter it.
+                </div>
+                <div id="heatmapWrap" class="hidden">
+                    <div class="legend" id="heatLegend"></div>
+                    <div class="table-scroll">
+                        <table class="heatmap" id="heatmap"></table>
+                    </div>
+                </div>
+            </section>
+
+            <p class="footer-link"><a href="dashboard.html?view=me">View my own practice →</a></p>
+        </section>
+    </main>
+
+    <div id="tooltip" class="tooltip hidden" role="tooltip"></div>
+
+    <script type="module" src="assets/js/dashboard.js"></script>
+</body>
+</html>
