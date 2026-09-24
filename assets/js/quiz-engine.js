@@ -19,11 +19,20 @@ function shuffleQuestion(question) {
         explanation: question.explanation,
     };
     if (question.visual) shuffled.visual = question.visual;
+    if (question.difficulty) shuffled.difficulty = question.difficulty;
     return shuffled;
 }
 
+export const LEVELS = { 1: 'Warm-up', 2: 'Core', 3: 'Challenge' };
+
+// Questions get progressively harder: all Warm-up questions first, then Core,
+// then Challenge. Order is shuffled within each level so every attempt differs.
 export function prepareAttempt(questions) {
-    return shuffle(questions).map(shuffleQuestion);
+    const levelOf = q => q.difficulty || 2;
+    const levels = [...new Set(questions.map(levelOf))].sort((a, b) => a - b);
+    return levels
+        .flatMap(level => shuffle(questions.filter(q => levelOf(q) === level)))
+        .map(shuffleQuestion);
 }
 
 export function createEngine({ topicId, questions, elements, store }) {
@@ -52,6 +61,13 @@ export function createEngine({ topicId, questions, elements, store }) {
         const question = state.questions[state.currentIndex];
         el('questionText').textContent = question.question;
         el('currentQ').textContent = state.currentIndex + 1;
+        const badge = el('levelBadge');
+        if (question.difficulty && LEVELS[question.difficulty]) {
+            badge.textContent = LEVELS[question.difficulty];
+            badge.className = 'level-badge level-' + question.difficulty;
+        } else {
+            badge.className = 'level-badge hidden';
+        }
         el('totalQ').textContent = state.questions.length;
         el('scoreDisplay').textContent = state.score;
 

@@ -4,18 +4,8 @@
   "description": "Solve equations, simplify expressions, and continue number sequences.",
   "questions": [
     {
-      "question": "What is the next number in the sequence: 2, 5, 10, 17, ?",
-      "options": [
-        "24",
-        "25",
-        "26",
-        "28"
-      ],
-      "correct": 2,
-      "explanation": "Differences: +3, +5, +7, +9. So 17 + 9 = 26"
-    },
-    {
       "question": "If 5x = 35, what is x?",
+      "difficulty": 1,
       "options": [
         "7",
         "30",
@@ -27,6 +17,7 @@
     },
     {
       "question": "If a = 3 and b = 4, what is 2a + b?",
+      "difficulty": 1,
       "options": [
         "7",
         "10",
@@ -38,6 +29,7 @@
     },
     {
       "question": "Simplify: 3(x + 2)",
+      "difficulty": 1,
       "options": [
         "3x + 2",
         "3x + 6",
@@ -49,6 +41,7 @@
     },
     {
       "question": "If x - 7 = 10, what is x?",
+      "difficulty": 1,
       "options": [
         "3",
         "17",
@@ -60,6 +53,7 @@
     },
     {
       "question": "What is the next number: 64, 32, 16, 8, ?",
+      "difficulty": 1,
       "options": [
         "4",
         "6",
@@ -70,18 +64,8 @@
       "explanation": "Each number is divided by 2: 8 ÷ 2 = 4"
     },
     {
-      "question": "If 3x + 5 = 20, what is x?",
-      "options": [
-        "5",
-        "8",
-        "15",
-        "25"
-      ],
-      "correct": 0,
-      "explanation": "3x = 20 - 5 = 15, so x = 15 ÷ 3 = 5"
-    },
-    {
       "question": "What is 2³?",
+      "difficulty": 1,
       "options": [
         "6",
         "8",
@@ -92,40 +76,8 @@
       "explanation": "2³ = 2 × 2 × 2 = 8"
     },
     {
-      "question": "Solve: 2(x - 3) = 10",
-      "options": [
-        "2",
-        "5",
-        "8",
-        "13"
-      ],
-      "correct": 2,
-      "explanation": "2(x - 3) = 10, so x - 3 = 5, therefore x = 8"
-    },
-    {
-      "question": "If a = 2 and b = 5, what is a² + b?",
-      "options": [
-        "9",
-        "10",
-        "27",
-        "29"
-      ],
-      "correct": 0,
-      "explanation": "2² + 5 = 4 + 5 = 9"
-    },
-    {
-      "question": "What is 7 × 8 + 4 ÷ 2?",
-      "options": [
-        "30",
-        "58",
-        "60",
-        "70"
-      ],
-      "correct": 1,
-      "explanation": "Follow order of operations: 7 × 8 = 56, 4 ÷ 2 = 2, so 56 + 2 = 58"
-    },
-    {
       "question": "What is -5 + 3?",
+      "difficulty": 1,
       "options": [
         "-8",
         "-2",
@@ -136,18 +88,8 @@
       "explanation": "Starting at -5 and moving 3 units toward zero gives -2"
     },
     {
-      "question": "What is 144 ÷ 12?",
-      "options": [
-        "10",
-        "12",
-        "14",
-        "16"
-      ],
-      "correct": 1,
-      "explanation": "144 ÷ 12 = 12"
-    },
-    {
       "question": "Which of these is a prime number?",
+      "difficulty": 1,
       "options": [
         "4",
         "6",
@@ -159,6 +101,7 @@
     },
     {
       "question": "What are the factors of 12?",
+      "difficulty": 1,
       "options": [
         "1, 2, 3, 4, 6, 12",
         "1, 2, 6, 12",
@@ -170,6 +113,7 @@
     },
     {
       "question": "What is √49?",
+      "difficulty": 1,
       "options": [
         "7",
         "24.5",
@@ -180,29 +124,8 @@
       "explanation": "√49 = 7 because 7 × 7 = 49"
     },
     {
-      "question": "If x² = 16, what is x?",
-      "options": [
-        "2",
-        "4",
-        "8",
-        "16"
-      ],
-      "correct": 1,
-      "explanation": "We need a number that when multiplied by itself equals 16. That's 4 × 4 = 16"
-    },
-    {
-      "question": "What is the least common multiple (LCM) of 4 and 6?",
-      "options": [
-        "2",
-        "12",
-        "24",
-        "4"
-      ],
-      "correct": 1,
-      "explanation": "Multiples of 4: 4, 8, 12, 16... Multiples of 6: 6, 12, 18... LCM = 12"
-    },
-    {
       "question": "Simplify: 5x + 3x - 2x",
+      "difficulty": 1,
       "options": [
         "6x",
         "8x",
@@ -213,7 +136,141 @@
       "explanation": "5x + 3x - 2x = (5 + 3 - 2)x = 6x"
     },
     {
+      "question": "What is 5³?",
+      "difficulty": 1,
+      "options": [
+        "15",
+        "25",
+        "125",
+        "625"
+      ],
+      "correct": 2,
+      "explanation": "5³ = 5 × 5 × 5 = 125"
+    },
+    {
+      "question": "What is -8 × -3?",
+      "difficulty": 1,
+      "options": [
+        "-24",
+        "-11",
+        "11",
+        "24"
+      ],
+      "correct": 3,
+      "explanation": "Negative × negative = positive. -8 × -3 = 24"
+    },
+    {
+      "question": "Simplify 4(2x + 3)",
+      "difficulty": 1,
+      "options": [
+        "6x + 3",
+        "8x + 3",
+        "8x + 12",
+        "2x + 12"
+      ],
+      "correct": 2,
+      "explanation": "4 × 2x + 4 × 3 = 8x + 12"
+    },
+    {
+      "question": "Using the number line, what is -3 + 5?",
+      "difficulty": 1,
+      "options": [
+        "-8",
+        "-2",
+        "2",
+        "8"
+      ],
+      "correct": 2,
+      "explanation": "Starting at -3 and moving 5 units right (positive direction) lands on 2",
+      "visual": "<svg viewBox=\"0 0 280 90\" width=\"320\">\n                    <line x1=\"20\" y1=\"50\" x2=\"260\" y2=\"50\" stroke=\"#333\" stroke-width=\"2\"/>\n                    <line x1=\"20\" y1=\"45\" x2=\"20\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"20\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">-4</text><line x1=\"50\" y1=\"45\" x2=\"50\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">-3</text><line x1=\"80\" y1=\"45\" x2=\"80\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"80\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">-2</text><line x1=\"110\" y1=\"45\" x2=\"110\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"110\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">-1</text><line x1=\"140\" y1=\"45\" x2=\"140\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"140\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">0</text><line x1=\"170\" y1=\"45\" x2=\"170\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"170\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">1</text><line x1=\"200\" y1=\"45\" x2=\"200\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">2</text><line x1=\"230\" y1=\"45\" x2=\"230\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"230\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">3</text><line x1=\"260\" y1=\"45\" x2=\"260\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"260\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">4</text>\n                    <path d=\"M 50 30 Q 125 0 200 30\" fill=\"none\" stroke=\"#e53935\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/>\n                    <defs><marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 Z\" fill=\"#e53935\"/></marker></defs>\n                </svg>"
+    },
+    {
+      "question": "What is the next number in the sequence: 2, 5, 10, 17, ?",
+      "difficulty": 2,
+      "options": [
+        "24",
+        "25",
+        "26",
+        "28"
+      ],
+      "correct": 2,
+      "explanation": "Differences: +3, +5, +7, +9. So 17 + 9 = 26"
+    },
+    {
+      "question": "If 3x + 5 = 20, what is x?",
+      "difficulty": 2,
+      "options": [
+        "5",
+        "8",
+        "15",
+        "25"
+      ],
+      "correct": 0,
+      "explanation": "3x = 20 - 5 = 15, so x = 15 ÷ 3 = 5"
+    },
+    {
+      "question": "Solve: 2(x - 3) = 10",
+      "difficulty": 2,
+      "options": [
+        "2",
+        "5",
+        "8",
+        "13"
+      ],
+      "correct": 2,
+      "explanation": "2(x - 3) = 10, so x - 3 = 5, therefore x = 8"
+    },
+    {
+      "question": "If a = 2 and b = 5, what is a² + b?",
+      "difficulty": 2,
+      "options": [
+        "9",
+        "10",
+        "27",
+        "29"
+      ],
+      "correct": 0,
+      "explanation": "2² + 5 = 4 + 5 = 9"
+    },
+    {
+      "question": "What is 7 × 8 + 4 ÷ 2?",
+      "difficulty": 2,
+      "options": [
+        "30",
+        "58",
+        "60",
+        "70"
+      ],
+      "correct": 1,
+      "explanation": "Follow order of operations: 7 × 8 = 56, 4 ÷ 2 = 2, so 56 + 2 = 58"
+    },
+    {
+      "question": "If x² = 16 and x is positive, what is x?",
+      "difficulty": 2,
+      "options": [
+        "2",
+        "4",
+        "8",
+        "16"
+      ],
+      "correct": 1,
+      "explanation": "We need a number that when multiplied by itself equals 16. That's 4 × 4 = 16"
+    },
+    {
+      "question": "What is the lowest common multiple (LCM) of 4 and 6?",
+      "difficulty": 2,
+      "options": [
+        "2",
+        "12",
+        "24",
+        "4"
+      ],
+      "correct": 1,
+      "explanation": "Multiples of 4: 4, 8, 12, 16... Multiples of 6: 6, 12, 18... LCM = 12"
+    },
+    {
       "question": "What is 10² - 5²?",
+      "difficulty": 2,
       "options": [
         "5",
         "25",
@@ -225,6 +282,7 @@
     },
     {
       "question": "If 2x + 3 = 11, what is x?",
+      "difficulty": 2,
       "options": [
         "3",
         "4",
@@ -236,6 +294,7 @@
     },
     {
       "question": "What is -3 - (-5)?",
+      "difficulty": 2,
       "options": [
         "-8",
         "-2",
@@ -246,7 +305,8 @@
       "explanation": "-3 - (-5) = -3 + 5 = 2 (subtracting a negative is like adding)"
     },
     {
-      "question": "What is the greatest common divisor (GCD) of 18 and 24?",
+      "question": "What is the highest common factor (HCF) of 18 and 24?",
+      "difficulty": 2,
       "options": [
         "2",
         "3",
@@ -254,43 +314,11 @@
         "12"
       ],
       "correct": 2,
-      "explanation": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. GCD = 6"
-    },
-    {
-      "question": "What is 5³?",
-      "options": [
-        "15",
-        "25",
-        "125",
-        "625"
-      ],
-      "correct": 2,
-      "explanation": "5³ = 5 × 5 × 5 = 125"
-    },
-    {
-      "question": "What is 7 × 8 - 3 × 5?",
-      "options": [
-        "11",
-        "28",
-        "41",
-        "56"
-      ],
-      "correct": 2,
-      "explanation": "7 × 8 = 56, 3 × 5 = 15, so 56 - 15 = 41"
-    },
-    {
-      "question": "What is 2⁴?",
-      "options": [
-        "8",
-        "16",
-        "32",
-        "64"
-      ],
-      "correct": 1,
-      "explanation": "2⁴ = 2 × 2 × 2 × 2 = 16"
+      "explanation": "Factors of 18: 1, 2, 3, 6, 9, 18. Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24. HCF = 6"
     },
     {
       "question": "What is 6 × 10²?",
+      "difficulty": 2,
       "options": [
         "60",
         "600",
@@ -302,6 +330,7 @@
     },
     {
       "question": "If y = 2x - 3, what is y when x = 4?",
+      "difficulty": 2,
       "options": [
         "5",
         "8",
@@ -312,29 +341,8 @@
       "explanation": "y = 2(4) - 3 = 8 - 3 = 5"
     },
     {
-      "question": "What is -8 × -3?",
-      "options": [
-        "-24",
-        "-11",
-        "11",
-        "24"
-      ],
-      "correct": 3,
-      "explanation": "Negative × negative = positive. -8 × -3 = 24"
-    },
-    {
-      "question": "If a line has gradient 2, and passes through (0, 3), what is y when x = 5?",
-      "options": [
-        "8",
-        "10",
-        "13",
-        "15"
-      ],
-      "correct": 2,
-      "explanation": "y = mx + c. y = 2x + 3. When x = 5: y = 2(5) + 3 = 10 + 3 = 13"
-    },
-    {
       "question": "What is the value of x if 3x - 2 = 13?",
+      "difficulty": 2,
       "options": [
         "3",
         "5",
@@ -346,6 +354,7 @@
     },
     {
       "question": "If a = 5 and b = 3, what is a² - b²?",
+      "difficulty": 2,
       "options": [
         "4",
         "16",
@@ -357,6 +366,7 @@
     },
     {
       "question": "What is the next term in the sequence: 100, 50, 25, 12.5, ?",
+      "difficulty": 2,
       "options": [
         "6.25",
         "0",
@@ -367,51 +377,8 @@
       "explanation": "Each term is divided by 2: 12.5 ÷ 2 = 6.25"
     },
     {
-      "question": "What is the lowest common multiple of 6 and 8?",
-      "options": [
-        "2",
-        "14",
-        "24",
-        "48"
-      ],
-      "correct": 2,
-      "explanation": "Multiples of 6: 6, 12, 18, 24... Multiples of 8: 8, 16, 24... LCM = 24"
-    },
-    {
-      "question": "If x = 2, what is 4x² + 3x - 5?",
-      "options": [
-        "5",
-        "9",
-        "17",
-        "21"
-      ],
-      "correct": 2,
-      "explanation": "4(2)² + 3(2) - 5 = 4(4) + 6 - 5 = 16 + 6 - 5 = 17"
-    },
-    {
-      "question": "If x = 2, what is 3x² + 2x - 1?",
-      "options": [
-        "5",
-        "9",
-        "15",
-        "21"
-      ],
-      "correct": 2,
-      "explanation": "3(2)² + 2(2) - 1 = 3(4) + 4 - 1 = 12 + 4 - 1 = 15."
-    },
-    {
-      "question": "Simplify 4(2x + 3)",
-      "options": [
-        "6x + 3",
-        "8x + 3",
-        "8x + 12",
-        "2x + 12"
-      ],
-      "correct": 2,
-      "explanation": "4 × 2x + 4 × 3 = 8x + 12"
-    },
-    {
       "question": "What is 15 - (-7)?",
+      "difficulty": 2,
       "options": [
         "-22",
         "-8",
@@ -422,38 +389,100 @@
       "explanation": "15 - (-7) = 15 + 7 = 22 (subtracting a negative is adding)"
     },
     {
-      "question": "What is √81?",
+      "question": "If a line has gradient 2, and passes through (0, 3), what is y when x = 5?",
+      "difficulty": 3,
       "options": [
         "8",
-        "9",
-        "10",
-        "11"
-      ],
-      "correct": 1,
-      "explanation": "√81 = 9 because 9 × 9 = 81"
-    },
-    {
-      "question": "What is the value of 2 × (3 + 4) - 1?",
-      "options": [
         "10",
         "13",
-        "14",
-        "20"
-      ],
-      "correct": 1,
-      "explanation": "2 × 7 - 1 = 14 - 1 = 13 (brackets first, then multiply, then subtract)"
-    },
-    {
-      "question": "Using the number line, what is -3 + 5?",
-      "options": [
-        "-8",
-        "-2",
-        "2",
-        "8"
+        "15"
       ],
       "correct": 2,
-      "explanation": "Starting at -3 and moving 5 units right (positive direction) lands on 2",
-      "visual": "<svg viewBox=\"0 0 280 90\" width=\"320\">\n                    <line x1=\"20\" y1=\"50\" x2=\"260\" y2=\"50\" stroke=\"#333\" stroke-width=\"2\"/>\n                    <line x1=\"20\" y1=\"45\" x2=\"20\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"20\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">-4</text><line x1=\"50\" y1=\"45\" x2=\"50\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"50\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">-3</text><line x1=\"80\" y1=\"45\" x2=\"80\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"80\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">-2</text><line x1=\"110\" y1=\"45\" x2=\"110\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"110\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">-1</text><line x1=\"140\" y1=\"45\" x2=\"140\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"140\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">0</text><line x1=\"170\" y1=\"45\" x2=\"170\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"170\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">1</text><line x1=\"200\" y1=\"45\" x2=\"200\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"200\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">2</text><line x1=\"230\" y1=\"45\" x2=\"230\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"230\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">3</text><line x1=\"260\" y1=\"45\" x2=\"260\" y2=\"55\" stroke=\"#333\" stroke-width=\"1.5\"/><text x=\"260\" y=\"72\" font-size=\"11\" text-anchor=\"middle\">4</text>\n                    <path d=\"M 50 30 Q 110 5 170 30\" fill=\"none\" stroke=\"#e53935\" stroke-width=\"2\" marker-end=\"url(#arrow)\"/>\n                    <defs><marker id=\"arrow\" markerWidth=\"8\" markerHeight=\"8\" refX=\"6\" refY=\"3\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 Z\" fill=\"#e53935\"/></marker></defs>\n                </svg>"
+      "explanation": "y = mx + c. y = 2x + 3. When x = 5: y = 2(5) + 3 = 10 + 3 = 13"
+    },
+    {
+      "question": "If x = 2, what is 4x² + 3x - 5?",
+      "difficulty": 3,
+      "options": [
+        "5",
+        "9",
+        "17",
+        "21"
+      ],
+      "correct": 2,
+      "explanation": "4(2)² + 3(2) - 5 = 4(4) + 6 - 5 = 16 + 6 - 5 = 17"
+    },
+    {
+      "question": "Solve 5x − 7 = 2x + 8.",
+      "difficulty": 3,
+      "options": [
+        "x = 7",
+        "x = 5",
+        "x = 3",
+        "x = 15"
+      ],
+      "correct": 1,
+      "explanation": "Subtract 2x from both sides: 3x − 7 = 8. Add 7: 3x = 15. Divide by 3: x = 5. Check: 5(5) − 7 = 18 and 2(5) + 8 = 18."
+    },
+    {
+      "question": "Expand and simplify 3(2x − 1) − 2(x − 4).",
+      "difficulty": 3,
+      "options": [
+        "4x − 5",
+        "4x − 11",
+        "8x + 5",
+        "4x + 5"
+      ],
+      "correct": 3,
+      "explanation": "3(2x − 1) = 6x − 3 and −2(x − 4) = −2x + 8. Combine: 6x − 2x − 3 + 8 = 4x + 5. Watch the sign: −2 × −4 = +8."
+    },
+    {
+      "question": "What is the 20th term of the sequence 7, 11, 15, 19, …?",
+      "difficulty": 3,
+      "options": [
+        "83",
+        "87",
+        "79",
+        "80"
+      ],
+      "correct": 0,
+      "explanation": "The sequence goes up by 4 each time, so the nth term is 4n + 3. The 20th term is 4 × 20 + 3 = 83."
+    },
+    {
+      "question": "Solve (x + 3) ÷ 4 = 5.",
+      "difficulty": 3,
+      "options": [
+        "x = 17",
+        "x = 23",
+        "x = 8",
+        "x = 2"
+      ],
+      "correct": 0,
+      "explanation": "Multiply both sides by 4: x + 3 = 20. Subtract 3: x = 17. Check: (17 + 3) ÷ 4 = 5."
+    },
+    {
+      "question": "A pattern uses 4, 7, 10, 13, … matchsticks. Which rule gives the number of matchsticks in pattern n?",
+      "difficulty": 3,
+      "options": [
+        "4n",
+        "n + 3",
+        "3n + 4",
+        "3n + 1"
+      ],
+      "correct": 3,
+      "explanation": "The number of matchsticks goes up by 3 each time, so the rule starts with 3n. For n = 1, 3 × 1 = 3, and we need 4, so add 1: 3n + 1. Check n = 4: 3 × 4 + 1 = 13."
+    },
+    {
+      "question": "If 2x + y = 11 and x − y = 1, what is the value of x?",
+      "difficulty": 3,
+      "options": [
+        "3",
+        "4",
+        "5",
+        "6"
+      ],
+      "correct": 1,
+      "explanation": "Add the two equations to eliminate y: 3x = 12, so x = 4. Then y = 11 − 8 = 3. Check: 4 − 3 = 1."
     }
   ]
 }

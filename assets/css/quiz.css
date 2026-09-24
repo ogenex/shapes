@@ -70,6 +70,23 @@
     font-weight: 500;
 }
 
+.level-badge {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 9px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    vertical-align: 1px;
+    border: 1px solid transparent;
+}
+
+/* Sequential blue: deeper = harder. The label carries the meaning. */
+.level-badge.level-1 { background: #e3f0fd; color: #1c5cab; }
+.level-badge.level-2 { background: #b7d3f6; color: #104281; }
+.level-badge.level-3 { background: #1c5cab; color: #ffffff; }
+
 .question-title {
     font-size: 18px;
     font-weight: 600;

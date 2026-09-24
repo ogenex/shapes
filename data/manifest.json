@@ -3,42 +3,56 @@
     "id": "fractions-decimals-percentages",
     "title": "Fractions, Decimals & Percentages",
     "description": "Convert, compare, and calculate with fractions, decimals, and percentages.",
-    "questionCount": 32
+    "questionCount": 40,
+    "color": "blue",
+    "icon": "pie"
   },
   {
     "id": "ratios-rates",
     "title": "Ratios & Rates",
     "description": "Compare quantities, scale recipes and maps, and work with speed and unit rates.",
-    "questionCount": 24
+    "questionCount": 40,
+    "color": "orange",
+    "icon": "scale"
   },
   {
     "id": "algebra-patterns",
     "title": "Algebra & Number Patterns",
     "description": "Solve equations, simplify expressions, and continue number sequences.",
-    "questionCount": 41
+    "questionCount": 40,
+    "color": "violet",
+    "icon": "variable"
   },
   {
     "id": "measurement-units",
     "title": "Measurement & Units",
     "description": "Perimeter, area, volume, unit conversions, time, and angle measurements.",
-    "questionCount": 24
+    "questionCount": 40,
+    "color": "aqua",
+    "icon": "ruler"
   },
   {
     "id": "geometry-shape",
     "title": "Geometry & Shape",
     "description": "Angles, triangles, polygons, coordinates, symmetry, and similar shapes.",
-    "questionCount": 26
+    "questionCount": 40,
+    "color": "magenta",
+    "icon": "shapes"
   },
   {
     "id": "statistics-probability",
     "title": "Statistics & Probability",
     "description": "Mean, median, mode, range, charts, and probability.",
-    "questionCount": 24
+    "questionCount": 40,
+    "color": "yellow",
+    "icon": "bars"
   },
   {
     "id": "money-financial",
     "title": "Money & Financial Maths",
     "description": "Discounts, interest, and everyday money calculations.",
-    "questionCount": 24
+    "questionCount": 40,
+    "color": "green",
+    "icon": "coin"
   }
 ]

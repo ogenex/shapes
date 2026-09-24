@@ -8,7 +8,7 @@ const elementIds = [
     'optionsContainer', 'feedbackContainer', 'nextButton', 'testScreen',
     'resultsScreen', 'percentageDisplay', 'correctCount', 'totalCount',
     'feedbackMessage', 'reviewSection', 'reviewToggle', 'reviewList',
-    'historyList', 'restartButton', 'printButton', 'saveStatus',
+    'historyList', 'restartButton', 'printButton', 'saveStatus', 'levelBadge',
 ];
 
 function collectElements() {

@@ -23,7 +23,12 @@ Signing in is optional — "Continue without an account" keeps the original
 behaviour, with progress saved only in that browser. If accounts haven't been
 configured (see below), the site runs entirely in that guest mode.
 
-Currently covers 7 topics and 195 questions in total:
+Currently covers 7 topics with 40 questions each (280 in total). Each quiz
+starts with Warm-up questions, moves on to Core, and finishes with
+Challenge questions; the order is shuffled within each level so every
+attempt is different.
+
+Topics:
 
 - Fractions, Decimals & Percentages
 - Ratios & Rates
@@ -109,11 +114,15 @@ Open the relevant file in `data/topics/` and add an entry to its
   "question": "What is 3/4 + 1/8?",
   "options": ["4/12", "7/8", "4/8", "7/4"],
   "correct": 1,
-  "explanation": "Convert to common denominator: 3/4 = 6/8, so 6/8 + 1/8 = 7/8"
+  "explanation": "Convert to common denominator: 3/4 = 6/8, so 6/8 + 1/8 = 7/8",
+  "difficulty": 2
 }
 ```
 
 - `correct` is the 0-based index into `options`.
+- `difficulty` is `1` (Warm-up), `2` (Core) or `3` (Challenge). Questions
+  are asked in that order. If it's missing, the question counts as Core.
+  Keep questions in the file sorted by difficulty for readability.
 - `visual` is optional: an inline SVG string (as used by several
   measurement/geometry/statistics questions) rendered above the options.
 - Update `questionCount` for that topic in `data/manifest.json` to match.
@@ -121,7 +130,11 @@ Open the relevant file in `data/topics/` and add an entry to its
 ### Adding a topic
 
 1. Create `data/topics/<new-id>.json` with `{ "id", "title", "description", "questions": [] }`.
-2. Add a matching entry to `data/manifest.json`.
+2. Add a matching entry to `data/manifest.json`. Optional fields style its
+   card on the home page: `"color"` (one of `blue`, `orange`, `aqua`,
+   `yellow`, `magenta`, `green`, `violet`, `red`) and `"icon"` (one of `pie`,
+   `scale`, `variable`, `ruler`, `shapes`, `bars`, `coin`, `book`). The colours
+   are a colour-blind-checked set; `red` is the one not yet in use.
 
 No other code changes are needed — `index.html` and `quiz.html` are both
 driven entirely by the manifest and topic files.

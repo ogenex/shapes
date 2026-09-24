@@ -5,6 +5,7 @@
   "questions": [
     {
       "question": "What is the mode of: 2, 3, 3, 5, 7, 3?",
+      "difficulty": 1,
       "options": [
         "2",
         "3",
@@ -16,6 +17,7 @@
     },
     {
       "question": "What is the median of: 1, 2, 3, 4, 5?",
+      "difficulty": 1,
       "options": [
         "1",
         "2",
@@ -27,6 +29,7 @@
     },
     {
       "question": "If I flip a fair coin, what's the probability of getting heads?",
+      "difficulty": 1,
       "options": [
         "0",
         "1/4",
@@ -38,6 +41,7 @@
     },
     {
       "question": "The mean of 5, 7, 9, and 11 is?",
+      "difficulty": 1,
       "options": [
         "7",
         "8",
@@ -49,6 +53,7 @@
     },
     {
       "question": "A bag contains 3 red balls and 5 blue balls. What's the probability of drawing a red ball?",
+      "difficulty": 1,
       "options": [
         "3/5",
         "3/8",
@@ -60,6 +65,7 @@
     },
     {
       "question": "The range of these numbers is: 3, 7, 2, 9, 5",
+      "difficulty": 1,
       "options": [
         "2",
         "5",
@@ -71,6 +77,7 @@
     },
     {
       "question": "A bag contains balls with numbers 1 to 10. What's the probability of drawing an even number?",
+      "difficulty": 1,
       "options": [
         "1/10",
         "1/5",
@@ -82,6 +89,7 @@
     },
     {
       "question": "This bar graph shows favourite sports. How many more students chose Soccer than Tennis?",
+      "difficulty": 1,
       "options": [
         "4",
         "6",
@@ -94,6 +102,7 @@
     },
     {
       "question": "This pie chart shows how a class travels to school. What percentage walk?",
+      "difficulty": 1,
       "options": [
         "25%",
         "35%",
@@ -106,6 +115,7 @@
     },
     {
       "question": "This line graph shows temperature over a day. At what time was it hottest?",
+      "difficulty": 1,
       "options": [
         "6am",
         "9am",
@@ -117,19 +127,8 @@
       "visual": "<svg viewBox=\"0 0 280 180\" width=\"320\">\n                    <line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"150\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                    <line x1=\"40\" y1=\"150\" x2=\"260\" y2=\"150\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                    <polyline points=\"60,130 100,100 140,50 180,70 220,110\" fill=\"none\" stroke=\"#e53935\" stroke-width=\"2.5\"/>\n                    <circle cx=\"140\" cy=\"50\" r=\"4\" fill=\"#e53935\"/>\n                    <text x=\"60\" y=\"165\" font-size=\"10\" text-anchor=\"middle\">6am</text>\n                    <text x=\"100\" y=\"165\" font-size=\"10\" text-anchor=\"middle\">9am</text>\n                    <text x=\"140\" y=\"165\" font-size=\"10\" text-anchor=\"middle\">12pm</text>\n                    <text x=\"180\" y=\"165\" font-size=\"10\" text-anchor=\"middle\">3pm</text>\n                    <text x=\"220\" y=\"165\" font-size=\"10\" text-anchor=\"middle\">6pm</text>\n                </svg>"
     },
     {
-      "question": "This table shows test scores. What is the mean score?",
-      "options": [
-        "14",
-        "16",
-        "18",
-        "20"
-      ],
-      "correct": 1,
-      "explanation": "Mean = (12+15+18+20+15) ÷ 5 = 80 ÷ 5 = 16",
-      "visual": "<svg viewBox=\"0 0 260 140\" width=\"300\">\n                    <rect x=\"20\" y=\"10\" width=\"220\" height=\"30\" fill=\"#e3f2fd\" stroke=\"#333\"/>\n                    <rect x=\"20\" y=\"40\" width=\"220\" height=\"30\" fill=\"white\" stroke=\"#333\"/>\n                    <line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"70\" stroke=\"#333\"/>\n                    <text x=\"75\" y=\"30\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Student</text>\n                    <text x=\"185\" y=\"30\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Score</text>\n                    <text x=\"75\" y=\"60\" font-size=\"12\" text-anchor=\"middle\">A, B, C, D, E</text>\n                    <text x=\"185\" y=\"60\" font-size=\"12\" text-anchor=\"middle\">12,15,18,20,15</text>\n                </svg>"
-    },
-    {
       "question": "This spinner is divided into equal sections. What's the probability of landing on blue?",
+      "difficulty": 1,
       "options": [
         "1/6",
         "1/2",
@@ -141,19 +140,8 @@
       "visual": "<svg viewBox=\"0 0 200 200\" width=\"220\">\n                    <circle cx=\"100\" cy=\"100\" r=\"80\" fill=\"white\" stroke=\"#333\" stroke-width=\"2\"/>\n                    <path d=\"M 100 100 L 100 20 A 80 80 0 0 1 169 60 Z\" fill=\"#42a5f5\"/>\n                    <path d=\"M 100 100 L 169 60 A 80 80 0 0 1 169 140 Z\" fill=\"#ef5350\"/>\n                    <path d=\"M 100 100 L 169 140 A 80 80 0 0 1 100 180 Z\" fill=\"#ffca28\"/>\n                    <path d=\"M 100 100 L 100 180 A 80 80 0 0 1 31 140 Z\" fill=\"#42a5f5\"/>\n                    <path d=\"M 100 100 L 31 140 A 80 80 0 0 1 31 60 Z\" fill=\"#66bb6a\"/>\n                    <path d=\"M 100 100 L 31 60 A 80 80 0 0 1 100 20 Z\" fill=\"#42a5f5\"/>\n                </svg>"
     },
     {
-      "question": "What is the median of the data shown in this dot plot?",
-      "options": [
-        "2",
-        "3",
-        "4",
-        "5"
-      ],
-      "correct": 1,
-      "explanation": "The dot plot shows values 1,2,2,3,4,4,5 (7 data points). Ordered, the middle (4th) value is the median: 3",
-      "visual": "<svg viewBox=\"0 0 260 110\" width=\"300\">\n                    <line x1=\"20\" y1=\"90\" x2=\"240\" y2=\"90\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                    <line x1=\"55\" y1=\"86\" x2=\"55\" y2=\"94\" stroke=\"#333\"/><text x=\"55\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"90\" y1=\"86\" x2=\"90\" y2=\"94\" stroke=\"#333\"/><text x=\"90\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"125\" y1=\"86\" x2=\"125\" y2=\"94\" stroke=\"#333\"/><text x=\"125\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"160\" y1=\"86\" x2=\"160\" y2=\"94\" stroke=\"#333\"/><text x=\"160\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"195\" y1=\"86\" x2=\"195\" y2=\"94\" stroke=\"#333\"/><text x=\"195\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">5</text><line x1=\"230\" y1=\"86\" x2=\"230\" y2=\"94\" stroke=\"#333\"/><text x=\"230\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">6</text>\n                    <circle cx=\"55\" cy=\"78\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"90\" cy=\"78\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"90\" cy=\"62\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"125\" cy=\"78\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"160\" cy=\"78\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"160\" cy=\"62\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"195\" cy=\"78\" r=\"6\" fill=\"#1976d2\"/>\n                </svg>"
-    },
-    {
       "question": "This stem-and-leaf plot shows test scores. What is the highest score?",
+      "difficulty": 1,
       "options": [
         "29",
         "30",
@@ -166,65 +154,343 @@
     },
     {
       "question": "A die is rolled once. What is the probability of NOT rolling a 6?",
-      "options": ["1/6", "1/3", "1/2", "5/6"],
+      "difficulty": 1,
+      "options": [
+        "1/6",
+        "1/3",
+        "1/2",
+        "5/6"
+      ],
       "correct": 3,
       "explanation": "P(not 6) = 1 - P(6) = 1 - 1/6 = 5/6"
     },
     {
-      "question": "Two coins are flipped. What is the probability that both land on heads?",
-      "options": ["1/2", "1/3", "1/4", "1/8"],
-      "correct": 2,
-      "explanation": "There are 4 equally likely outcomes (HH, HT, TH, TT), and only 1 is both heads, so P(both heads) = 1/4"
-    },
-    {
       "question": "What is the mean of: 4, 8, 6, 10, 12?",
-      "options": ["6", "8", "9", "10"],
+      "difficulty": 1,
+      "options": [
+        "6",
+        "8",
+        "9",
+        "10"
+      ],
       "correct": 1,
       "explanation": "Mean = (4 + 8 + 6 + 10 + 12) ÷ 5 = 40 ÷ 5 = 8"
     },
     {
       "question": "What is the mode of: 5, 9, 5, 2, 9, 5, 7?",
-      "options": ["2", "5", "7", "9"],
+      "difficulty": 1,
+      "options": [
+        "2",
+        "5",
+        "7",
+        "9"
+      ],
       "correct": 1,
       "explanation": "5 appears three times, more often than any other value, so the mode is 5"
     },
     {
-      "question": "What is the median of: 3, 7, 8, 12, 14, 20?",
-      "options": ["8", "10", "12", "14"],
-      "correct": 1,
-      "explanation": "With 6 values, the median is the average of the 3rd and 4th values: (8 + 12) ÷ 2 = 10"
-    },
-    {
       "question": "What is the range of: 15, 22, 9, 31, 18?",
-      "options": ["13", "18", "22", "31"],
+      "difficulty": 1,
+      "options": [
+        "13",
+        "18",
+        "22",
+        "31"
+      ],
       "correct": 2,
       "explanation": "Range = highest - lowest = 31 - 9 = 22"
     },
     {
-      "question": "Team A scored 10, 14, 18 in three games. Team B scored 12, 12, 16 in three games. Which team has the higher mean score?",
-      "options": ["Team A", "Team B", "They are equal", "Cannot be determined"],
-      "correct": 0,
-      "explanation": "Team A's mean = (10+14+18) ÷ 3 = 14. Team B's mean = (12+12+16) ÷ 3 ≈ 13.3. Team A is higher"
-    },
-    {
       "question": "A bag contains only red marbles. What is the probability of picking a blue marble?",
-      "options": ["Certain", "Likely", "Unlikely", "Impossible"],
+      "difficulty": 1,
+      "options": [
+        "Certain",
+        "Likely",
+        "Unlikely",
+        "Impossible"
+      ],
       "correct": 3,
       "explanation": "Since there are no blue marbles in the bag, picking one is impossible"
     },
     {
       "question": "This frequency table shows how many pets students in a class have. How many students have exactly 2 pets?",
-      "options": ["1", "5", "6", "8"],
+      "difficulty": 1,
+      "options": [
+        "1",
+        "5",
+        "6",
+        "8"
+      ],
       "correct": 2,
       "explanation": "Reading the table, the frequency for 2 pets is 6",
       "visual": "<svg viewBox=\"0 0 260 140\" width=\"300\"><rect x=\"20\" y=\"10\" width=\"220\" height=\"30\" fill=\"#e3f2fd\" stroke=\"#333\"/><rect x=\"20\" y=\"40\" width=\"220\" height=\"30\" fill=\"white\" stroke=\"#333\"/><line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"70\" stroke=\"#333\"/><text x=\"75\" y=\"30\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Pets</text><text x=\"185\" y=\"30\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Students</text><text x=\"75\" y=\"60\" font-size=\"12\" text-anchor=\"middle\">0, 1, 2, 3</text><text x=\"185\" y=\"60\" font-size=\"12\" text-anchor=\"middle\">5, 8, 6, 1</text></svg>"
     },
     {
       "question": "This bar graph shows how many books each of 4 students read in a month. What is the total number of books read by all 4 students?",
-      "options": ["10", "12", "14", "16"],
+      "difficulty": 1,
+      "options": [
+        "10",
+        "12",
+        "14",
+        "16"
+      ],
       "correct": 2,
       "explanation": "Adding the bars: 3 + 5 + 2 + 4 = 14",
       "visual": "<svg viewBox=\"0 0 280 180\" width=\"320\"><line x1=\"40\" y1=\"20\" x2=\"40\" y2=\"150\" stroke=\"#333\" stroke-width=\"1.5\"/><line x1=\"40\" y1=\"150\" x2=\"260\" y2=\"150\" stroke=\"#333\" stroke-width=\"1.5\"/><rect x=\"50\" y=\"105\" width=\"30\" height=\"45\" fill=\"#42a5f5\"/><rect x=\"105\" y=\"75\" width=\"30\" height=\"75\" fill=\"#66bb6a\"/><rect x=\"160\" y=\"120\" width=\"30\" height=\"30\" fill=\"#ffa726\"/><rect x=\"215\" y=\"90\" width=\"30\" height=\"60\" fill=\"#ab47bc\"/><text x=\"65\" y=\"165\" font-size=\"11\" text-anchor=\"middle\">A</text><text x=\"120\" y=\"165\" font-size=\"11\" text-anchor=\"middle\">B</text><text x=\"175\" y=\"165\" font-size=\"11\" text-anchor=\"middle\">C</text><text x=\"230\" y=\"165\" font-size=\"11\" text-anchor=\"middle\">D</text><text x=\"65\" y=\"97\" font-size=\"11\" text-anchor=\"middle\">3</text><text x=\"120\" y=\"67\" font-size=\"11\" text-anchor=\"middle\">5</text><text x=\"175\" y=\"112\" font-size=\"11\" text-anchor=\"middle\">2</text><text x=\"230\" y=\"82\" font-size=\"11\" text-anchor=\"middle\">4</text></svg>"
+    },
+    {
+      "question": "This table shows test scores. What is the mean score?",
+      "difficulty": 2,
+      "options": [
+        "14",
+        "16",
+        "18",
+        "20"
+      ],
+      "correct": 1,
+      "explanation": "Mean = (12+15+18+20+15) ÷ 5 = 80 ÷ 5 = 16",
+      "visual": "<svg viewBox=\"0 0 260 140\" width=\"300\">\n                    <rect x=\"20\" y=\"10\" width=\"220\" height=\"30\" fill=\"#e3f2fd\" stroke=\"#333\"/>\n                    <rect x=\"20\" y=\"40\" width=\"220\" height=\"30\" fill=\"white\" stroke=\"#333\"/>\n                    <line x1=\"130\" y1=\"10\" x2=\"130\" y2=\"70\" stroke=\"#333\"/>\n                    <text x=\"75\" y=\"30\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Student</text>\n                    <text x=\"185\" y=\"30\" font-size=\"13\" text-anchor=\"middle\" font-weight=\"bold\">Score</text>\n                    <text x=\"75\" y=\"60\" font-size=\"12\" text-anchor=\"middle\">A, B, C, D, E</text>\n                    <text x=\"185\" y=\"60\" font-size=\"12\" text-anchor=\"middle\">12,15,18,20,15</text>\n                </svg>"
+    },
+    {
+      "question": "What is the median of the data shown in this dot plot?",
+      "difficulty": 2,
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correct": 1,
+      "explanation": "The dot plot shows values 1,2,2,3,4,4,5 (7 data points). Ordered, the middle (4th) value is the median: 3",
+      "visual": "<svg viewBox=\"0 0 260 110\" width=\"300\">\n                    <line x1=\"20\" y1=\"90\" x2=\"240\" y2=\"90\" stroke=\"#333\" stroke-width=\"1.5\"/>\n                    <line x1=\"55\" y1=\"86\" x2=\"55\" y2=\"94\" stroke=\"#333\"/><text x=\"55\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">1</text><line x1=\"90\" y1=\"86\" x2=\"90\" y2=\"94\" stroke=\"#333\"/><text x=\"90\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">2</text><line x1=\"125\" y1=\"86\" x2=\"125\" y2=\"94\" stroke=\"#333\"/><text x=\"125\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">3</text><line x1=\"160\" y1=\"86\" x2=\"160\" y2=\"94\" stroke=\"#333\"/><text x=\"160\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">4</text><line x1=\"195\" y1=\"86\" x2=\"195\" y2=\"94\" stroke=\"#333\"/><text x=\"195\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">5</text><line x1=\"230\" y1=\"86\" x2=\"230\" y2=\"94\" stroke=\"#333\"/><text x=\"230\" y=\"106\" font-size=\"10\" text-anchor=\"middle\">6</text>\n                    <circle cx=\"55\" cy=\"78\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"90\" cy=\"78\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"90\" cy=\"62\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"125\" cy=\"78\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"160\" cy=\"78\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"160\" cy=\"62\" r=\"6\" fill=\"#1976d2\"/>\n                    <circle cx=\"195\" cy=\"78\" r=\"6\" fill=\"#1976d2\"/>\n                </svg>"
+    },
+    {
+      "question": "Two coins are flipped. What is the probability that both land on heads?",
+      "difficulty": 2,
+      "options": [
+        "1/2",
+        "1/3",
+        "1/4",
+        "1/8"
+      ],
+      "correct": 2,
+      "explanation": "There are 4 equally likely outcomes (HH, HT, TH, TT), and only 1 is both heads, so P(both heads) = 1/4"
+    },
+    {
+      "question": "What is the median of: 3, 7, 8, 12, 14, 20?",
+      "difficulty": 2,
+      "options": [
+        "8",
+        "10",
+        "12",
+        "14"
+      ],
+      "correct": 1,
+      "explanation": "With 6 values, the median is the average of the 3rd and 4th values: (8 + 12) ÷ 2 = 10"
+    },
+    {
+      "question": "Team A scored 10, 14, 18 in three games. Team B scored 12, 12, 16 in three games. Which team has the higher mean score?",
+      "difficulty": 2,
+      "options": [
+        "Team A",
+        "Team B",
+        "They are equal",
+        "Cannot be determined"
+      ],
+      "correct": 0,
+      "explanation": "Team A's mean = (10+14+18) ÷ 3 = 14. Team B's mean = (12+12+16) ÷ 3 ≈ 13.3. Team A is higher"
+    },
+    {
+      "question": "The mean of four numbers is 12. Three of the numbers are 10, 15 and 9. What is the fourth number?",
+      "difficulty": 2,
+      "options": [
+        "14",
+        "11",
+        "12",
+        "8"
+      ],
+      "correct": 0,
+      "explanation": "The four numbers must add to 4 × 12 = 48. 10 + 15 + 9 = 34, so the fourth number is 48 − 34 = 14."
+    },
+    {
+      "question": "A spinner has 8 equal sections: 3 red, 4 green and 1 yellow. If it is spun 40 times, about how many times would you expect it to land on green?",
+      "difficulty": 2,
+      "options": [
+        "10",
+        "20",
+        "4",
+        "16"
+      ],
+      "correct": 1,
+      "explanation": "P(green) = 4/8 = 1/2. Expected number = 1/2 × 40 = 20."
+    },
+    {
+      "question": "A letter is chosen at random from the word MATHEMATICS. What is the probability that it is an M?",
+      "difficulty": 2,
+      "options": [
+        "1/5",
+        "2/9",
+        "2/11",
+        "1/11"
+      ],
+      "correct": 2,
+      "explanation": "MATHEMATICS has 11 letters and 2 of them are M. So P(M) = 2/11."
+    },
+    {
+      "question": "What is the median of 12, 5, 9, 20, 7, 15, 10?",
+      "difficulty": 2,
+      "options": [
+        "9",
+        "10",
+        "20",
+        "11.1"
+      ],
+      "correct": 1,
+      "explanation": "Put the numbers in order: 5, 7, 9, 10, 12, 15, 20. The middle (4th) value is 10."
+    },
+    {
+      "question": "A fair die is rolled. What is the probability of rolling a number greater than 4?",
+      "difficulty": 2,
+      "options": [
+        "2/3",
+        "1/2",
+        "1/6",
+        "1/3"
+      ],
+      "correct": 3,
+      "explanation": "Only 5 and 6 are greater than 4: that is 2 out of 6 outcomes, and 2/6 = 1/3."
+    },
+    {
+      "question": "The probability that it rains tomorrow is 0.35. What is the probability that it does not rain?",
+      "difficulty": 2,
+      "options": [
+        "1.35",
+        "0.65",
+        "0.53",
+        "0.35"
+      ],
+      "correct": 1,
+      "explanation": "The probabilities of an event and its opposite add to 1: 1 − 0.35 = 0.65."
+    },
+    {
+      "question": "Five test scores are 6, 8, 8, 9 and 14. If the 14 is changed to 40, which of these statistics stays the same?",
+      "difficulty": 2,
+      "options": [
+        "The mean",
+        "The median",
+        "The total",
+        "The range"
+      ],
+      "correct": 1,
+      "explanation": "The median is the middle value, 8, and it does not change. The total, mean and range all increase because the largest score got bigger."
+    },
+    {
+      "question": "Two fair dice are rolled and the numbers are added. What is the probability of a total of 7?",
+      "difficulty": 3,
+      "options": [
+        "1/6",
+        "1/12",
+        "1/11",
+        "7/36"
+      ],
+      "correct": 0,
+      "explanation": "There are 6 × 6 = 36 equally likely outcomes. A total of 7 comes from (1,6), (2,5), (3,4), (4,3), (5,2), (6,1): 6 outcomes. 6/36 = 1/6."
+    },
+    {
+      "question": "The mean of 5 numbers is 20. When a sixth number is added, the mean becomes 22. What is the sixth number?",
+      "difficulty": 3,
+      "options": [
+        "24",
+        "32",
+        "42",
+        "22"
+      ],
+      "correct": 1,
+      "explanation": "The first 5 numbers total 5 × 20 = 100. The 6 numbers total 6 × 22 = 132. The sixth number is 132 − 100 = 32."
+    },
+    {
+      "question": "A fair coin is flipped three times. What is the probability of getting exactly two heads?",
+      "difficulty": 3,
+      "options": [
+        "1/4",
+        "3/8",
+        "1/2",
+        "2/3"
+      ],
+      "correct": 1,
+      "explanation": "There are 2³ = 8 outcomes. Exactly two heads: HHT, HTH, THH — 3 outcomes. So the probability is 3/8."
+    },
+    {
+      "question": "A bag has 4 red and 6 blue counters. One counter is taken out and not put back, then a second counter is taken. What is the probability that both are red?",
+      "difficulty": 3,
+      "options": [
+        "1/5",
+        "3/10",
+        "2/15",
+        "4/25"
+      ],
+      "correct": 2,
+      "explanation": "P(first red) = 4/10. With one red gone, P(second red) = 3/9. Multiply: 4/10 × 3/9 = 12/90 = 2/15."
+    },
+    {
+      "question": "In a class of 30 students, 18 play soccer, 12 play basketball and 5 play both. How many students play neither?",
+      "difficulty": 3,
+      "options": [
+        "10",
+        "7",
+        "5",
+        "0"
+      ],
+      "correct": 2,
+      "explanation": "Students playing at least one sport = 18 + 12 − 5 = 25 (the 5 who play both were counted twice). Neither = 30 − 25 = 5."
+    },
+    {
+      "question": "In a survey, 35% of students said they walk to school. On a pie chart, what angle should the \"walk\" sector be?",
+      "difficulty": 3,
+      "options": [
+        "70°",
+        "126°",
+        "105°",
+        "35°"
+      ],
+      "correct": 1,
+      "explanation": "A full circle is 360°. 35% of 360° = 0.35 × 360° = 126°."
+    },
+    {
+      "question": "The heights of five plants are 12 cm, 15 cm, 15 cm, 18 cm and x cm. Their mean height is 16 cm. What is x?",
+      "difficulty": 3,
+      "options": [
+        "18",
+        "15",
+        "16",
+        "20"
+      ],
+      "correct": 3,
+      "explanation": "The five heights must total 5 × 16 = 80 cm. 12 + 15 + 15 + 18 = 60, so x = 80 − 60 = 20."
+    },
+    {
+      "question": "A class test had a mean of 65 marks. Every student is then given 5 bonus marks. What happens to the mean and the range?",
+      "difficulty": 3,
+      "options": [
+        "Mean becomes 70; range increases by 10",
+        "Mean becomes 70; range increases by 5",
+        "Mean becomes 70; range unchanged",
+        "Mean stays 65; range unchanged"
+      ],
+      "correct": 2,
+      "explanation": "Adding 5 to every score adds 5 to the mean (65 + 5 = 70). The highest and lowest scores both go up by 5, so the gap between them — the range — stays the same."
+    },
+    {
+      "question": "A box holds red, blue and green marbles. P(red) = 0.2 and P(blue) = 0.45. There are 14 green marbles. How many marbles are in the box?",
+      "difficulty": 3,
+      "options": [
+        "40",
+        "35",
+        "70",
+        "49"
+      ],
+      "correct": 0,
+      "explanation": "P(green) = 1 − 0.2 − 0.45 = 0.35. So 0.35 of the total is 14: total = 14 ÷ 0.35 = 40."
     }
   ]
 }
