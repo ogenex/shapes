@@ -173,7 +173,23 @@ h1 {
     background: var(--c);
 }
 
-.topic-card:hover,
+@media (hover: hover) {
+    .topic-card:hover {
+        transform: translateY(-3px);
+        border-color: color-mix(in srgb, var(--c) 45%, white);
+        box-shadow: 0 10px 28px color-mix(in srgb, var(--c) 22%, transparent), 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    .topic-card:hover .cta {
+        transform: translateX(3px);
+    }
+}
+
+/* Touch feedback: a quick press-in instead of hover */
+.topic-card:active {
+    transform: scale(0.985);
+}
+
 .topic-card:focus-visible {
     transform: translateY(-3px);
     border-color: color-mix(in srgb, var(--c) 45%, white);
@@ -371,9 +387,6 @@ h1 {
     transition: transform 0.18s ease;
 }
 
-.topic-card:hover .cta {
-    transform: translateX(3px);
-}
 
 .empty-state,
 .error-state {
@@ -384,6 +397,27 @@ h1 {
 }
 
 /* ---------- Small screens ---------- */
+
+@media (pointer: coarse) {
+    .next-cta.button {
+        min-height: 48px;
+    }
+}
+
+/* iPad portrait / small tablets: two roomy columns */
+@media (min-width: 641px) and (max-width: 900px) {
+    .topic-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-stats {
+        width: 100%;
+    }
+
+    .hero-stat {
+        flex: 1;
+    }
+}
 
 @media (max-width: 640px) {
     h1 { font-size: 26px; }
@@ -397,5 +431,5 @@ h1 {
 
 @media (prefers-reduced-motion: reduce) {
     .topic-card, .cta { transition: none; }
-    .topic-card:hover { transform: none; }
+    .topic-card:hover, .topic-card:active { transform: none; }
 }

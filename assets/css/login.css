@@ -42,6 +42,9 @@ h1 {
 }
 
 .tab {
+    -webkit-appearance: none;
+    appearance: none;
+    min-height: 46px;
     flex: 1;
     background: none;
     border: none;
@@ -78,8 +81,13 @@ h1 {
 .form input[type="text"],
 .form input[type="email"],
 .form input[type="password"] {
+    -webkit-appearance: none;
+    appearance: none;
     font: inherit;
-    font-size: 15px;
+    font-size: 16px;   /* 16px+ stops iOS Safari zooming in on focus */
+    min-height: 46px;
+    background: white;
+    color: #222;
     font-weight: 400;
     padding: 10px 12px;
     border: 1px solid #ccc;
@@ -125,6 +133,22 @@ h1 {
 .small-link {
     font-size: 13px;
     align-self: center;
+    padding: 8px 12px;
+}
+
+.form label.radio input {
+    width: 20px;
+    height: 20px;
+}
+
+.form label.radio {
+    min-height: 44px;
+}
+
+@media (max-width: 480px) {
+    .login-wrap { margin-top: 8px; }
+    .card { padding: 22px 18px; }
+    h1 { font-size: 24px; }
 }
 
 .message {

@@ -77,12 +77,41 @@ function wireTooltips(root) {
         tip.textContent = target.getAttribute('data-tip');
         place(target);
     };
-    const hide = () => tip.classList.add('hidden');
+    let active = null;
+    const hide = () => {
+        tip.classList.add('hidden');
+        if (active) active.classList.remove('active');
+        active = null;
+    };
     root.addEventListener('mouseover', showFor);
     root.addEventListener('focusin', showFor);
-    root.addEventListener('mouseout', hide);
-    root.addEventListener('focusout', hide);
+    root.addEventListener('mouseout', event => { if (!active) hide(); });
+    root.addEventListener('focusout', event => { if (!active) hide(); });
+    // Touch screens have no hover: tap a cell or point to show its details,
+    // tap it again (or anywhere else) to hide them.
+    root.addEventListener('click', event => {
+        const target = event.target.closest('[data-tip]');
+        if (!target || !root.contains(target)) return;
+        if (active === target) return hide();
+        hide();
+        active = target;
+        target.classList.add('active');
+        showFor(event);
+    });
+    document.addEventListener('click', event => {
+        if (active && !root.contains(event.target)) hide();
+    });
     window.addEventListener('scroll', hide, { passive: true });
+}
+
+// Show a "swipe" hint and edge shadow when a table is wider than its panel
+function markScrollable(scroller) {
+    const update = () => scroller.classList.toggle('scrollable', scroller.scrollWidth > scroller.clientWidth + 2);
+    update();
+    if (!scroller.dataset.watch) {
+        scroller.dataset.watch = '1';
+        window.addEventListener('resize', update);
+    }
 }
 
 // Tiny single-series line of percentage scores, oldest → newest
@@ -153,7 +182,7 @@ function renderStudent({ name, subtitlePrefix, attempts, manifest, ownView }) {
             return '<tr>' +
                 '<td><span class="topic-name">' + escapeHtml(topic.title) + '</span></td>' +
                 '<td><span class="status ' + s.cls + '">' + s.label + '</span></td>' +
-                '<td class="num">' + (t ? t.latestPct + '%' : '<span class="muted">—</span>') + '</td>' +
+                '<td class="num latest-cell">' + (t ? t.latestPct + '%' : '<span class="muted">—</span>') + '</td>' +
                 '<td class="num hide-sm">' + (t ? t.best + '%' : '<span class="muted">—</span>') + '</td>' +
                 '<td class="num hide-sm">' + (t ? t.attempts.length : 0) + '</td>' +
                 '<td>' + (t ? sparkline(t.attempts, topic.title) : '<span class="muted">No attempts yet</span>') + '</td>' +
@@ -384,6 +413,7 @@ async function renderTutor(user, manifest) {
                     'aria-label="' + escapeHtml('Remove ' + s.name) + '">Remove</button></td>' +
                     '</tr>';
             }).join('') + '</tbody>';
+        markScrollable($('heatmap').parentElement);
     }
 
     $('heatmap').addEventListener('click', async event => {
@@ -404,6 +434,7 @@ async function renderTutor(user, manifest) {
     await draw();
     $('loadingState').classList.add('hidden');
     $('tutorView').classList.remove('hidden');
+    markScrollable($('heatmap').parentElement); // measure now that it's visible
 }
 
 // ---------------------------------------------------------------------

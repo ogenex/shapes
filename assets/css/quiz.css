@@ -1,10 +1,14 @@
 .container {
-    max-width: 640px;
+    max-width: 760px;
     margin: 0 auto;
     background: white;
-    border-radius: 12px;
+    border-radius: 16px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 40px;
+    padding: clamp(18px, 5vw, 40px);
+}
+
+.userbar {
+    max-width: 760px;
 }
 
 .back-link {
@@ -15,8 +19,10 @@
     margin-bottom: 20px;
 }
 
-.back-link:hover {
-    color: #1565c0;
+@media (hover: hover) {
+    .back-link:hover {
+        color: #1565c0;
+    }
 }
 
 .topic-title {
@@ -36,6 +42,7 @@
 
 .resume-banner {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     gap: 12px;
@@ -46,6 +53,11 @@
     margin-bottom: 20px;
     font-size: 13px;
     color: #5d4a00;
+}
+
+.resume-banner > span:last-child {
+    display: flex;
+    gap: 8px;
 }
 
 .resume-banner .button {
@@ -119,19 +131,34 @@
 }
 
 .option {
+    -webkit-appearance: none;
+    appearance: none;
     padding: 14px 16px;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 15px;
-    transition: all 0.2s;
+    font: inherit;
+    font-size: 16px;
+    line-height: 1.35;
+    color: #222;
+    transition: background-color 0.2s, border-color 0.2s;
     background: white;
     text-align: left;
+    min-height: 52px;
 }
 
-.option:hover:not(:disabled) {
-    border-color: #999;
-    background: #f9f9f9;
+/* Hover only on devices that really hover — on iPad a tapped option would
+   otherwise stay highlighted into the next question */
+@media (hover: hover) {
+    .option:hover:not(:disabled) {
+        border-color: #999;
+        background: #f9f9f9;
+    }
+}
+
+.option:active:not(:disabled) {
+    background: #f1f5fb;
+    border-color: #90caf9;
 }
 
 .option:disabled {
@@ -297,6 +324,92 @@
     gap: 10px;
 }
 
+/* ---------- Tablets ---------- */
+
+@media (min-width: 700px) {
+    .question-title {
+        font-size: 21px;
+    }
+
+    /* 2 × 2 answer grid keeps the question, answers, feedback and
+       Next button on one iPad screen */
+    .options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .option {
+        font-size: 17px;
+        padding: 16px 18px;
+        min-height: 60px;
+    }
+
+    .visual-container svg {
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .feedback {
+        font-size: 15px;
+    }
+
+    .results-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .results-actions #restartButton {
+        grid-column: 1 / -1;
+        order: -1;
+    }
+}
+
+/* ---------- Phones ---------- */
+
+@media (max-width: 480px) {
+    .topic-title {
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+
+    .back-link {
+        margin-bottom: 12px;
+    }
+
+    .progress-bar {
+        margin-bottom: 20px;
+        padding-bottom: 14px;
+    }
+
+    .question-title {
+        font-size: 18px;
+    }
+
+    .visual-container {
+        padding: 12px;
+        margin-bottom: 18px;
+    }
+
+    .visual-container svg {
+        width: 100%;
+    }
+
+    .score-display {
+        font-size: 48px;
+    }
+}
+
+@media (pointer: coarse) {
+    .back-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+}
+
 @media print {
     body {
         background: white;
@@ -326,4 +439,9 @@
     padding: 10px 14px;
     margin-bottom: 20px;
     text-align: left;
+}
+
+/* Leave a little breathing room when the Next button is scrolled into view */
+#nextButton {
+    scroll-margin-bottom: 16px;
 }

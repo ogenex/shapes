@@ -38,6 +38,21 @@ Topics:
 - Statistics & Probability
 - Money & Financial Maths
 
+## Tablets and phones
+
+The site is designed for iPads first (most students practise on one) and
+works down to small phones:
+
+- Every button and link is at least 44 × 44 points, and quiz answers are
+  big tap areas laid out 2 × 2 on tablets.
+- After answering, the page scrolls so the explanation and **Next question**
+  button are in view. The next question then scrolls back to the top.
+- Tables become stacked rows on phones. The tutor grid keeps names pinned
+  while you swipe across topics. Tap a score to see its details.
+- Text fields use 16px text, so iOS doesn't zoom in when you tap them.
+- **Add to Home Screen** gives the site its own icon. It opens in Safari,
+  so sign-ins and guest progress are shared with the browser.
+
 ## How the site is built
 
 A static, no-build site: `index.html` lists topics; `quiz.html` runs

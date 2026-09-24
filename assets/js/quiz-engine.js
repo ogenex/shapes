@@ -48,6 +48,27 @@ export function createEngine({ topicId, questions, elements, store }) {
         return elements[name];
     }
 
+    const scrollBehavior = () =>
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth';
+
+    // On tablets/phones the feedback and Next button often land below the
+    // fold after answering — bring them into view.
+    function revealFeedback() {
+        const button = el('nextButton');
+        const rect = button.getBoundingClientRect();
+        if (rect.bottom > window.innerHeight - 8) {
+            button.scrollIntoView({ behavior: scrollBehavior(), block: 'end' });
+        }
+    }
+
+    // ...and when the next question loads, make sure its top is visible.
+    function revealQuestion(screen = 'testScreen') {
+        const top = el(screen).getBoundingClientRect().top;
+        if (top < 0) {
+            window.scrollTo({ top: window.scrollY + top - 12, behavior: scrollBehavior() });
+        }
+    }
+
     function persist() {
         store.saveResume(topicId, {
             questions: state.questions,
@@ -135,6 +156,7 @@ export function createEngine({ topicId, questions, elements, store }) {
         feedbackContainer.classList.remove('hidden');
 
         el('nextButton').classList.remove('hidden');
+        requestAnimationFrame(revealFeedback);
 
         persist();
     }
@@ -143,6 +165,7 @@ export function createEngine({ topicId, questions, elements, store }) {
         if (state.currentIndex < state.questions.length - 1) {
             state.currentIndex++;
             loadQuestion();
+            revealQuestion();
         } else {
             showResults();
         }
@@ -151,6 +174,7 @@ export function createEngine({ topicId, questions, elements, store }) {
     function showResults() {
         el('testScreen').classList.add('hidden');
         el('resultsScreen').classList.remove('hidden');
+        revealQuestion('resultsScreen');
 
         const total = state.questions.length;
         const percentage = Math.round((state.score / total) * 100);

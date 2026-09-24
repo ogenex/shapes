@@ -47,7 +47,7 @@ h1 {
     margin-bottom: 12px;
 }
 
-.back-link:hover { color: var(--accent); }
+@media (hover: hover) { .back-link:hover { color: var(--accent); } }
 
 /* ---------- Banners ---------- */
 
@@ -209,7 +209,7 @@ h1 {
     white-space: nowrap;
 }
 
-.topic-table .practise:hover { text-decoration: underline; }
+@media (hover: hover) { .topic-table .practise:hover { text-decoration: underline; } }
 
 .muted { color: var(--ink-3); }
 
@@ -330,10 +330,15 @@ h1 {
 }
 
 .inline-form input {
+    -webkit-appearance: none;
+    appearance: none;
     flex: 1;
     min-width: 0;
     font: inherit;
-    font-size: 15px;
+    font-size: 16px;   /* stops iOS zoom-on-focus */
+    min-height: 40px;
+    background: white;
+    color: #222;
     letter-spacing: 0.12em;
     text-transform: uppercase;
     padding: 7px 10px;
@@ -474,7 +479,7 @@ h1 {
     white-space: nowrap;
 }
 
-.heatmap .student-link:hover { color: var(--accent); }
+@media (hover: hover) { .heatmap .student-link:hover { color: var(--accent); } }
 
 .heatmap .meta {
     font-size: 12px;
@@ -506,9 +511,13 @@ h1 {
 .cell.b5 { background: var(--seq-5); color: white; }
 .cell.none { background: var(--empty); color: #999; font-weight: 400; }
 
-.cell:hover,
-.cell:focus {
+.cell:focus,
+.cell.active {
     outline: 2px solid var(--ink);
+}
+
+@media (hover: hover) {
+    .cell:hover { outline: 2px solid var(--ink); }
 }
 
 .remove-btn {
@@ -534,6 +543,31 @@ h1 {
     text-decoration: none;
 }
 
+/* Keep the student's name visible while swiping across topics */
+.heatmap th.left,
+.heatmap td.left {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: white;
+}
+
+.table-scroll.scrollable .heatmap td.left {
+    box-shadow: 6px 0 8px -6px rgba(0,0,0,0.18);
+}
+
+.swipe-hint {
+    display: none;
+    font-size: 12px;
+    color: var(--ink-3);
+    margin: 8px 0 0;
+}
+
+.table-scroll.scrollable + .swipe-hint,
+.swipe-hint.show {
+    display: block;
+}
+
 /* ---------- Tooltip ---------- */
 
 .tooltip {
@@ -550,12 +584,130 @@ h1 {
     box-shadow: 0 4px 12px rgba(0,0,0,0.18);
 }
 
+/* ---------- Touch screens ---------- */
+
+@media (pointer: coarse) {
+    .topic-table .practise {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 12px;
+        margin: -10px -12px;
+        border-radius: 8px;
+    }
+
+    .inline-form input {
+        min-height: 44px;
+    }
+
+    .spark .hit {
+        r: 11px;
+    }
+
+    .cell {
+        height: 42px;
+    }
+
+    .heatmap .student-link {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+    }
+
+    .remove-btn {
+        padding: 0 10px;
+    }
+
+    .footer-link a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 12px;
+    }
+}
+
+/* ---------- Tablets (iPad portrait) ---------- */
+
+@media (max-width: 900px) {
+    .cell {
+        min-width: 46px;
+        font-size: 12px;
+    }
+
+    .heatmap th {
+        padding: 4px 2px 8px;
+    }
+
+    .heatmap .meta {
+        padding: 0 4px;
+    }
+}
+
 /* ---------- Small screens ---------- */
 
 @media (max-width: 760px) {
     .tiles { grid-template-columns: repeat(2, 1fr); }
     .two-col { grid-template-columns: 1fr; }
     .hide-sm { display: none; }
+}
+
+/* Phones: the topic table becomes a stack of compact rows */
+@media (max-width: 600px) {
+    .panel { padding: 16px; }
+    h1 { font-size: 23px; }
+    .tile { padding: 14px; }
+    .tile-value { font-size: 24px; }
+
+    .topic-table thead { display: none; }
+
+    .topic-table,
+    .topic-table tbody {
+        display: block;
+    }
+
+    .topic-table tr {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-areas:
+            "name   name"
+            "status spark"
+            "scores practise";
+        gap: 6px 12px;
+        align-items: center;
+        padding: 12px 0;
+        border-bottom: 1px solid var(--line);
+    }
+
+    .topic-table tr:last-child { border-bottom: none; }
+
+    .topic-table td {
+        display: block;
+        padding: 0;
+        border: none;
+    }
+
+    .topic-table td.hide-sm { display: none; }
+    .topic-table td:nth-child(1) { grid-area: name; }
+    .topic-table td:nth-child(2) { grid-area: status; }
+    .topic-table td.latest-cell { grid-area: scores; text-align: left; }
+    .topic-table td:nth-child(6) { grid-area: spark; justify-self: end; }
+    .topic-table td:nth-child(7) { grid-area: practise; justify-self: end; }
+
+    .topic-table td.latest-cell::before {
+        content: 'Latest ';
+        color: var(--ink-3);
+        font-size: 12px;
+    }
+
+    .code { font-size: 26px; }
+
+    .heatmap .student-link {
+        white-space: normal;
+        max-width: 96px;
+        line-height: 1.25;
+        padding-right: 6px;
+    }
+    .code-panel { gap: 16px; }
 }
 
 @media print {
